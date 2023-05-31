@@ -15,6 +15,7 @@ export const HeroSection = () => {
             alt=""
             width={325}
             height={325}
+            priority
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
