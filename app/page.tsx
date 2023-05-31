@@ -1,10 +1,17 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 import HeroSection from "@/components/HeroSection"
 import AboutSection from "@/components/AboutSection"
 import ProjectSection from "@/components/ProjectSection"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Andrew Truex",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 }
 
 export default function Home() {
