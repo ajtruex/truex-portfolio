@@ -11,7 +11,7 @@ export const HeroSection = () => {
         <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
-            src="/headshot-crop.png"
+            src="/memoji-mac.png"
             alt=""
             width={325}
             height={325}
@@ -23,14 +23,7 @@ export const HeroSection = () => {
             Hi, I&#39;m Andrew.
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
-            </span>
-            based in Indianapolis, IN. I enjoy building things that live on the
-            internet, whether that be websites, applications, or anything in
-            between. My goal is to always build products that provide
-            pixel-perfect, performant experiences.
+            I&#39;m a web developer with a focus on unique web experiences and products, preferably in the realm of movies, culture and comedy.
           </p>
           <Link
             to="projects"
