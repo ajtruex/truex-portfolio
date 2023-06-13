@@ -26,43 +26,51 @@ const AboutSection = () => {
         </h1>
         <div className="flex flex-col md:flex-row space-y-10 items-stretch justify-center align-top md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div className="md:w-1/2">
-            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
+            <h1 className="text-center text-2xl font-bold mb-6 md:text-center">
               Get to know me
             </h1>
             <p>
-              {" "}
-              Hi, my name is Andrew Truex and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Indianapolis, IN.
+              I am passionate about the intersection of technology and art. I
+              believe that by combining the best of both worlds, we can create
+              truly groundbreaking software and web experiences that are both
+              aesthetically pleasing and functionally innovative.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              My mission is to create software that not only functions
+              seamlessly but also evokes emotions and leaves a lasting
+              impression. I love creating software that makes people feel
+              something.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              I like to focus on where technology meets art, and where
+              exceptional software and web experiences come to life. I bring
+              visions to life, while infusing them with intuitive interfaces,
+              visually stunning designs, and seamless interactions.
             </p>
             <br />
-            <p>
-              I believe that you should{" "}
-              <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
-            </p>
+            <h2 className="font-bold text-xl text-center">What Drives Me</h2>
+            <br />
+            <ul className="list-disc">
+              <li>
+                <span className="font-bold">A thirst for knowledge:</span> My
+                desire to learn anything that will improve my web development
+                skills is the driving force behind my work.
+              </li>
+              <li>
+                <span className="font-bold">Technological Advancement:</span> I
+                love being on the bleeding edge of technology.
+              </li>
+              <li>
+                <span className="font-bold">Search for original ideas:</span> I
+                believe technology advances through the identification and
+                development of original ideas.
+              </li>
+            </ul>
+            <br />
           </div>
-          <div className="text-center md:w-1/2 md:text-left">
+          <div className="text-center md:w-1/2 md:text-center">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
