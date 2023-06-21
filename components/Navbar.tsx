@@ -26,8 +26,8 @@ const NAV_ITEMS = [
     page: "/projects",
   },
   {
-    label: "Uses",
-    page: "/uses",
+    label: "Stack",
+    page: "/stack",
   },
   {
     label: "Contact",
@@ -125,7 +125,7 @@ const Navbar = () => {
     //   </ul>
     // </nav>
     // <header className="w-full mx-auto px-4 sm:px-20 bg-white shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600 dark:text-white">
-    <div className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
+    // <div className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
       <div className="flex flex-col items-start md:px-5">
         <div className="flex cursor-pointer flex-row  items-center justify-center space-x-3">
           <Image
@@ -189,7 +189,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
     // {/* // </header> */}
   )
 }

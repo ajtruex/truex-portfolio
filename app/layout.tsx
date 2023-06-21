@@ -23,12 +23,14 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="dark:bg-black">
+      <body className="dark:bg-black ">
+        <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
           <Footer />
         </ThemeProvider>
+        </main>
       </body>
     </html>
   )
