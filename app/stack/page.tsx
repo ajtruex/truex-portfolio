@@ -150,7 +150,7 @@ const Stack = () => {
             <Link
               href="https://amzn.to/3pLQuGA"
               target="_blank"
-              className="flex flex-row hover:text-[#9f82ff] py-[10px]"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
             >
               Laptop: 13&quot; MacBook Pro Retina (Early 2015)
             </Link>
@@ -193,7 +193,57 @@ const Stack = () => {
         </div>
         <div className="text-center">
           <h3 className="text-4xl font-bold pb-2">Coding</h3>
+          <h4 className="text-lg font-normal text-[#888888] pb-2">
+            Editor and Terminal things I use
+          </h4>
           <hr className="h-1 bg-white border-0" />
+          <div className="text-base font-semibold mt-2 text-left">
+            <p className="flex flex-row  py-2.5">
+              Editor: VSCode&nbsp;
+              <Link
+                href="https://gist.github.com/ajtruex/fe71a59b7c919827c9c26e118caa6f32"
+                target="_blank"
+                className="hover:text-[#9f82ff]"
+              >
+                (Settings/Extensions)
+              </Link>
+            </p>
+            <Link
+              href="https://marketplace.visualstudio.com/items?itemName=TruBoo.truboo"
+              target="_blank"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
+            >
+              Theme: TruBoo
+            </Link>
+            <Link
+              href="https://iterm2.com/"
+              target="_blank"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
+            >
+              Terminal: iTerm2
+            </Link>
+            <Link
+              href="https://ohmyz.sh/"
+              target="_blank"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
+            >
+              Shell: Oh My Zsh
+            </Link>
+            <Link
+              href="https://brew.sh/"
+              target="_blank"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
+            >
+              Package Manager: Homebrew
+            </Link>
+            <Link
+              href="https://www.google.com/chrome/"
+              target="_blank"
+              className="flex flex-row hover:text-[#9f82ff] py-2.5"
+            >
+              Browser + Dev Tools: Google Chrome
+            </Link>
+          </div>
         </div>
       </div>
       {/* <div className="mt-12 m-auto grid gap-5 lg:grid-cols-2 lg:gap-10">
