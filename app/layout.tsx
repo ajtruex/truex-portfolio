@@ -41,6 +41,11 @@ export default function RootLayout({
           src="https://analytics.umami.is/script.js"
           data-website-id="c1ecb30b-bd10-49c9-8eae-34471d9e3830"
         ></Script>
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "419da8fb28a9475f88966976ff56def9"}'
+        ></script>
       </head>
       <body className="dark:bg-black ">
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
