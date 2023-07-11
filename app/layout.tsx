@@ -1,6 +1,7 @@
 "use client"
 import "../styles/globals.css"
 import { Inter } from "next/font/google"
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from "@/components/Navbar"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/Footer"
@@ -39,6 +40,7 @@ export default function RootLayout({
           <ThemeProvider enableSystem={true} attribute="class">
             <Navbar />
             {children}
+            <Analytics />
             <Footer />
           </ThemeProvider>
         </main>
