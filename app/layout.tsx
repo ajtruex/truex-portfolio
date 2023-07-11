@@ -36,6 +36,11 @@ export default function RootLayout({
           async
           src="//gc.zgo.at/count.js"
         ></script>
+        <Script
+          async
+          src="https://analytics.umami.is/script.js"
+          data-website-id="c1ecb30b-bd10-49c9-8eae-34471d9e3830"
+        ></Script>
       </head>
       <body className="dark:bg-black ">
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
