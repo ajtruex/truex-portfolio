@@ -24,12 +24,23 @@ export default function RootLayout({
       */}
       <head />
       <body className="dark:bg-black ">
+        <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href="/favicon-120-precomposed.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon-180-precomposed.png"
+        />
         <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+          <ThemeProvider enableSystem={true} attribute="class">
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </main>
       </body>
     </html>

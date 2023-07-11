@@ -3,12 +3,13 @@ import HeroSection from "@/components/HeroSection"
 import AboutSection from "@/components/AboutSection"
 import ProjectSection from "@/components/ProjectSection"
 
-
 export const metadata: Metadata = {
   title: "Andrew Truex",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  // icons: {
+  //   rel: "icon",
+  //   icon: "/happy-mac.ico",
+  //   sizes: "32x32",
+  // },
   viewport: {
     width: "device-width",
     initialScale: 1,
