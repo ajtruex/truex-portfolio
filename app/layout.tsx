@@ -31,6 +31,11 @@ export default function RootLayout({
           data-utcoffset="-4"
           defer
         ></script>
+        <script
+          data-goatcounter="https://jeed317.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </head>
       <body className="dark:bg-black ">
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
