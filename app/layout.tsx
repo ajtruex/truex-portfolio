@@ -1,10 +1,11 @@
 "use client"
 import "../styles/globals.css"
 import { Inter } from "next/font/google"
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/Navbar"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/Footer"
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +24,14 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <script
+          src="https://cdn.counter.dev/script.js"
+          data-id="29660159-2540-4921-b585-6cfaa524b9e6"
+          data-utcoffset="-4"
+          defer
+        ></script>
+      </head>
       <body className="dark:bg-black ">
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
         <link
