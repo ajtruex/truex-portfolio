@@ -51,6 +51,16 @@ export default function RootLayout({
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token": "419da8fb28a9475f88966976ff56def9"}'
         ></script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZJ5BZMBEMM" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZJ5BZMBEMM');
+        `}
+        </Script>
       </head>
       <body className="dark:bg-black ">
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
