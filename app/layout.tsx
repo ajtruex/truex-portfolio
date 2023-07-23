@@ -25,6 +25,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head>
+        <title>Andrew Truex</title>
         <script
           src="https://cdn.counter.dev/script.js"
           data-id="29660159-2540-4921-b585-6cfaa524b9e6"
