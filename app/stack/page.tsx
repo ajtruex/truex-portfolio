@@ -2,6 +2,13 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+export const metadata = {
+  title: "Andrew Truex - Stack",
+  icons: {
+    icon: "/happy-mac.ico",
+  },
+}
+
 const STACK_ITEMS = [
   {
     name: "Raycast",

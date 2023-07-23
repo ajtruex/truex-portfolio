@@ -2,7 +2,13 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { projects } from "@/data/projects"
-
+import { Metadata } from "next"
+export const metadata = {
+  title: "Andrew Truex - Projects",
+  icons: {
+    icon: "/directory-computer.ico",
+  },
+}
 // const projects = [
 //   {
 //     name: "Portfolio",
