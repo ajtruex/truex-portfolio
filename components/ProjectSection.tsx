@@ -20,12 +20,28 @@ const projects = [
     link: "https://movievuer.netlify.app/",
   },
   {
+    name: "Next Movies",
+    description: "A movie review aggregator made with Next.js.",
+    image: "/next-movies.png",
+    github: "https://github.com/ajtruex/next-movies",
+    link: "http://movies.andrewtruex.tech/",
+  },
+  {
     name: "BS Upcycled Home Decor",
     description:
       "A website for a local business built with Next.js featuring an image gallery.",
-    image: "/bs.png",
+    image: "/bs2.png",
     github: "https://github.com/ajtruex/bsupcycledhomedecor",
     link: "https://bsupcycledhomedecor.com/",
+  },
+  {
+    name: "WhoSampled Raycast Extension",
+    description:
+      "Search WhoSampled.com from the currently playing song in Spotify",
+    image: "/whosampled-raycast-extension.png",
+    github:
+      "https://github.com/raycast/extensions/tree/main/extensions/whosampled",
+    link: "https://www.raycast.com/truex/whosampled",
   },
 ]
 
