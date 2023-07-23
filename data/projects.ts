@@ -16,7 +16,7 @@ export const projects = [
   {
     name: "MovieVuer",
     description: "A movie review aggregator made with Vue.js.",
-    image: "/movie-vuer.png",
+    image: "/movievuer.png",
     github: "https://github.com/ajtruex/MovieVuer",
     link: "https://movievuer.netlify.app/",
     route: "MovieVuer",
