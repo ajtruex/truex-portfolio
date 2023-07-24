@@ -27,6 +27,12 @@ export default function RootLayout({
       <head>
         <title>Andrew Truex</title>
         <script
+          defer
+          src="https://unpkg.com/@tinybirdco/flock.js"
+          data-host="https://api.us-east.tinybird.co"
+          data-token="p.eyJ1IjogImQyZDNkYzY5LWNlZWMtNDJlZi1hMGMxLTExNGMxN2Q5NDE5NiIsICJpZCI6ICJkZWU3MjM2MS02MmM4LTRhOWItYmVmNC1lYjNkZDk2N2U1MGEifQ.OFBCBcMlXedM-c4J4UN-EWlt4uRyyx278lg4Qfl8pjg"
+        ></script>
+        <script
           src="https://cdn.counter.dev/script.js"
           data-id="29660159-2540-4921-b585-6cfaa524b9e6"
           data-utcoffset="-4"
