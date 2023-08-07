@@ -105,26 +105,6 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           })}
         </div>
       </h2>
-      <div className="overflow-hidden">
-        <div className="whitespace-nowrap">
-          {projects.map((project, index) => {
-            return (
-              <div
-                key={index}
-                className="inline-block w-64 h-64 mr-4 transform transition-transform duration-300 hover:scale-110"
-              >
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  width={500}
-                  height={500}
-                  className="rounded-xl shadow-xl"
-                />
-              </div>
-            )
-          })}
-        </div>
-      </div>
     </div>
   )
 }
