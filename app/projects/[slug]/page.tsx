@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { projects } from "@/data/projects"
+import { BsGithub, BsArrowUpRightCircle } from "react-icons/bs"
 
 const ProjectPage = ({ params }: { params: { slug: string } }) => {
   // const router = useRouter()
@@ -19,9 +20,42 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
       <h1 className="text-5xl text-center font-bold mt-20 mb-3">
         {project.name}
       </h1>
-      <p className="text-xl mb-12 text-neutral-600 dark:text-neutral-400 text-center">
+      <p className="text-xl mb-3 text-neutral-600 dark:text-neutral-400 text-center">
         {project.description}
       </p>
+      <div className="flex justify-center">
+        <div className="flex items-center mb-12">
+          <div className="relative inline-block group">
+            <Link
+              href={project.link}
+              target="_blank"
+              className="flex flex-col text-lg font-semibold mr-8"
+            >
+              {/* Demo */}
+              <BsArrowUpRightCircle
+                size={30}
+                className="mt-2 cursor-pointer hover:-translate-y-1 transition-transform"
+              />
+            </Link>
+            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-2 text-lg font-semibold">
+              <p>Demo</p>
+            </div>
+          </div>
+          <div className="relative inline-block group">
+            <Link
+              href={project.github}
+              target="_blank"
+              className="flex flex-col text-lg font-semibold hover:-translate-y-1 transition-transform"
+            >
+              {/* Source */}
+              <BsGithub size={30} className="mt-2  cursor-pointer" />
+            </Link>
+            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-1 text-lg font-semibold">
+              <p>Source</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <div className="grid grid-cols-2">
         <h2 className="text-3xl text-center mt-12">
           Goals
@@ -71,6 +105,26 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           })}
         </div>
       </h2>
+      <div className="overflow-hidden">
+        <div className="whitespace-nowrap">
+          {projects.map((project, index) => {
+            return (
+              <div
+                key={index}
+                className="inline-block w-64 h-64 mr-4 transform transition-transform duration-300 hover:scale-110"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  width={500}
+                  height={500}
+                  className="rounded-xl shadow-xl"
+                />
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }
