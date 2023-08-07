@@ -55,7 +55,13 @@ export const projects = [
     github: "https://github.com/ajtruex/bsupcycledhomedecor",
     link: "https://bsupcycledhomedecor.com/",
     route: "bs",
-    tools: [{ name: "Next.js", image: "/nextjs-logo.png" }],
+    tools: [
+      { name: "Next.js", image: "/nextjs-logo.png" },
+      { name: "Vercel", image: "/vercel-logo.png" },
+      { name: "Tailwind CSS", image: "/tailwind-logo.png" },
+      { name: "Cloudinary", image: "/cloudinary-logo.png" },
+      { name: "Framer Motion", image: "/framer-motion-logo.png" },
+    ],
   },
   {
     name: "WhoSampled Raycast Extension",
