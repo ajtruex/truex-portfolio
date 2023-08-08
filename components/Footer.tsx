@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai"
 import { MdOutlineLogoDev } from "react-icons/md"
 import Icon from "./Icon"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -38,13 +39,21 @@ const Footer = () => {
               size={30}
             />
           </Link>
-          <Link
-            href="https://read.cv/truex"
-            rel="noreferrer"
-            target="_blank"
-            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-          >
-            <Icon />
+          <Link href="https://read.cv/truex" rel="noreferrer" target="_blank">
+            {/* <Image
+              src="/icon.svg"
+              alt="read.cv"
+              width={30}
+              height={30}
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 fill-neutral-500 stroke-neutral-500"
+            /> */}
+            <Icon
+              // src="/readcv.svg"
+              // alt="read.cv"
+              width={30}
+              height={30}
+              className="hover:-translate-y-1 transition-transform cursor-pointer fill-neutral-500 text-neutral-500 dark:fill-neutral-100"
+            />
           </Link>
           <Link
             href="https://www.linkedin.com/in/ajtruex/"
