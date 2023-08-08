@@ -105,6 +105,90 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           })}
         </div>
       </h2>
+      {/* <div className="carousel w-full">
+        <div id="slide1" className="carousel-item relative w-full">
+          <Image
+            src="/portfolio2.png"
+            alt="Slide 1"
+            width={1920}
+            height={1080}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <Link href="#slide4" className="btn btn-circle">
+              ❮
+            </Link>
+            <Link href="#slide2" className="btn btn-circle">
+              ❯
+            </Link>
+          </div>
+        </div>
+        <div id="slide2" className="carousel-item relative w-full">
+          <Image
+            src="/beta.andrewtruex.tech_about-withbrowser.png"
+            alt="Slide 2"
+            width={1920}
+            height={1080}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <Link href="#slide1" className="btn btn-circle">
+              ❮
+            </Link>
+            <Link href="#slide3" className="btn btn-circle">
+              ❯
+            </Link>
+          </div>
+        </div>
+        <div id="slide3" className="carousel-item relative w-full">
+          <Image
+            src="/beta.andrewtruex.tech_projects.png"
+            alt="Slide 3"
+            width={1920}
+            height={1080}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <Link href="#slide2" className="btn btn-circle">
+              ❮
+            </Link>
+            <Link href="#slide4" className="btn btn-circle">
+              ❯
+            </Link>
+          </div>
+        </div>
+        <div id="slide4" className="carousel-item relative w-full">
+          <Image
+            src="/beta.andrewtruex.tech_uses.png"
+            alt="Slide 4"
+            width={1920}
+            height={1080}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <Link href="#slide3" className="btn btn-circle">
+              ❮
+            </Link>
+            <Link href="#slide1" className="btn btn-circle">
+              ❯
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center w-full py-2 gap-2 join">
+        <a href="#slide1" className="join-item btn btn-active">
+          ○
+        </a>
+        <a href="#slide2" className="join-item btn">
+          ○
+        </a>
+        <a href="#slide3" className="join-item btn">
+          ○
+        </a>
+        <a href="#slide4" className="join-item btn">
+          ○
+        </a>
+      </div> */}
     </div>
   )
 }
