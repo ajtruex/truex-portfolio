@@ -50,6 +50,16 @@ const STACK_ITEMS = [
     image: "/figma-logo.png",
     link: "https://www.figma.com/",
   },
+  {
+    name: "IINA",
+    image: "/iina-logo.png",
+    link: "https://iina.io/",
+  },
+  {
+    name: "Omnivore",
+    image: "/omnivore-logo.png",
+    link: "https://omnivore.app/",
+  },
 ]
 
 const TECH_STACK = [
