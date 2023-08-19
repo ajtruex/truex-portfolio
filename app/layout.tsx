@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar"
 import { ThemeProvider } from "next-themes"
 import Footer from "@/components/Footer"
 import Script from "next/script"
+import CommandMenu from "@/components/CommandK"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -83,6 +84,7 @@ export default function RootLayout({
         />
         <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
           <ThemeProvider enableSystem={true} attribute="class">
+            <CommandMenu />
             <Navbar />
             {children}
             <Analytics />
