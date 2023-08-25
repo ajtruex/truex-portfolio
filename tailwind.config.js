@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
+        circular: ["var(--font-circular)"],
       },
       animation: {
         bounce:
