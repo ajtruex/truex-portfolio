@@ -5,6 +5,7 @@ import ProjectSection from "@/components/ProjectSection"
 
 export const metadata: Metadata = {
   title: "Andrew Truex",
+  description: "Andrew Truex's Portfolio Website",
   // icons: {
   //   rel: "icon",
   //   icon: "/happy-mac.ico",
