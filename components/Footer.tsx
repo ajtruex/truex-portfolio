@@ -7,6 +7,7 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai"
 import { MdOutlineLogoDev } from "react-icons/md"
+import { FaDev } from "react-icons/fa"
 import Icon from "./Icon"
 import Image from "next/image"
 
@@ -65,12 +66,9 @@ const Footer = () => {
               size={30}
             />
           </Link>
-          <Link
-            href="https://www.youtube.com/@andrewtruex"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineYoutube
+
+          <Link href="https://dev.to/truex" rel="noreferrer" target="_blank">
+            <FaDev
               className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
               size={30}
             />
