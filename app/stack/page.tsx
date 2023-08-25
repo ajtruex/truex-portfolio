@@ -158,7 +158,7 @@ const Stack = () => {
       <div className="mt-40 lg:mt-32 grid grid-cols-2 gap-10">
         <div className="text-center">
           <h3 className="text-4xl font-bold pb-2">Setup</h3>
-          <h4 className="text-lg font-normal text-[#888888] pb-2">
+          <h4 className="md:text-lg text-base font-normal text-[#888888] pb-2">
             Gear and workspace stuff I use
           </h4>
           <hr className="h-1 bg-white border-0" />
@@ -210,21 +210,19 @@ const Stack = () => {
         </div>
         <div className="text-center">
           <h3 className="text-4xl font-bold pb-2">Coding</h3>
-          <h4 className="text-lg font-normal text-[#888888] pb-2">
+          <h4 className="md:text-lg text-base font-normal text-[#888888] pb-2">
             Editor and Terminal things I use
           </h4>
           <hr className="h-1 bg-white border-0" />
-          <div className="text-base font-semibold mt-2 text-left">
-            <p className="flex flex-row  py-2.5">
-              Editor: VSCode&nbsp;
-              <Link
-                href="https://gist.github.com/ajtruex/fe71a59b7c919827c9c26e118caa6f32"
-                target="_blank"
-                className="hover:text-[#9f82ff]"
-              >
-                (Settings/Extensions)
-              </Link>
-            </p>
+          <div className="text-base font-semibold mt-2 text-start">
+            <Link
+              href="https://gist.github.com/ajtruex/fe71a59b7c919827c9c26e118caa6f32"
+              target="_blank"
+              className="hover:text-[#9f82ff] flex flex-row  py-2.5"
+            >
+              Editor: VSCode (Settings/Extensions)
+            </Link>
+
             <Link
               href="https://marketplace.visualstudio.com/items?itemName=TruBoo.truboo"
               target="_blank"

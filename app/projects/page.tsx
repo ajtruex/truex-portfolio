@@ -55,7 +55,7 @@ const Projects = () => {
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
       <h1 className="text-5xl text-center font-bold mt-20 mb-12">Projects</h1>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid lg:grid-cols-3 lg:gap-8 md:grid-cols-3 md:gap-5 grid-cols-1 gap-5">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
@@ -71,7 +71,7 @@ const Projects = () => {
                   <h1 className="text-4xl font-semibold mb-3 mt-6 text-center">
                     {project.name}
                   </h1>
-                  <p className="text-lg mb-4 text-neutral-600 dark:text-neutral-400">
+                  <p className="text-lg mb-4 text-neutral-600 dark:text-neutral-400 md:text-start text-center">
                     {project.description}
                   </p>
                 </Link>
