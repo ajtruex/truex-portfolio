@@ -3,7 +3,6 @@
 // import NowPlaying from "../components/NowPlaying";
 import TopArtists from "@/components/TopArtists"
 import TopTracks from "@/components/TopTracks"
-// import Footer from "../components/Footer";
 
 export default function About() {
   return (
