@@ -96,7 +96,7 @@ const Stack = () => {
               href={item.link}
               key={idx}
               target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-gray-500 p-5 dark:bg-[#111111] w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-[#111111] w-[200px] md:w-full"
             >
               {/* <div
                 key={idx}
@@ -110,7 +110,7 @@ const Stack = () => {
                 className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
               />
               <div className="flex flex-col items-start space-y-2">
-                <h3 className="font-medium text-lg">{item.name}</h3>
+                <h3 className="font-medium text-lg text-white">{item.name}</h3>
               </div>
               {/* </div> */}
             </Link>
@@ -130,7 +130,7 @@ const Stack = () => {
               href={item.link}
               key={idx}
               target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-gray-500 p-5 dark:bg-[#111111] w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-[#111111] w-[200px] md:w-full"
             >
               <Image
                 src={item.image}
@@ -140,7 +140,7 @@ const Stack = () => {
                 className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
               />
               <div className="flex flex-col items-start space-y-2">
-                <h3 className="font-medium text-lg">{item.name}</h3>
+                <h3 className="font-medium text-lg text-white">{item.name}</h3>
               </div>
               {/* </div> */}
             </Link>
@@ -161,7 +161,7 @@ const Stack = () => {
           <h4 className="md:text-lg text-base font-normal text-[#888888] pb-2">
             Gear and workspace stuff I use
           </h4>
-          <hr className="h-1 bg-white border-0" />
+          <hr className="h-1 dark:bg-white bg-black border-0" />
           {/* <div className="mt-10 grid gap-10 justify-items-center md:justify-items-start md:grid-cols-3 lg:grid-cols-4 md:gap-5 lg:gap-x-10 lg:gap-y-10"> */}
           <div className="text-base font-semibold mt-2 text-left">
             <Link
@@ -213,7 +213,7 @@ const Stack = () => {
           <h4 className="md:text-lg text-base font-normal text-[#888888] pb-2">
             Editor and Terminal things I use
           </h4>
-          <hr className="h-1 bg-white border-0" />
+          <hr className="h-1 dark:bg-white bg-black border-0" />
           <div className="text-base font-semibold mt-2 text-start">
             <Link
               href="https://gist.github.com/ajtruex/fe71a59b7c919827c9c26e118caa6f32"

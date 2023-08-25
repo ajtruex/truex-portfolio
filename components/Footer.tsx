@@ -13,9 +13,9 @@ import Image from "next/image"
 const Footer = () => {
   return (
     <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
-      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0" />
-      <div className="mx-auto  p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
-        <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-neutral-100">
+      <hr className="w-full h-0.5 mx-auto mt-8 bg-black dark:bg-neutral-200 border-0" />
+      <div className="mx-auto  p-4 flex flex-col text-center  md:flex-row md:justify-between">
+        <div className="flex flex-row items-center justify-center space-x-1 text-black dark:text-neutral-100">
           © 2023 Andrew Truex<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
@@ -25,7 +25,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer  dark:text-neutral-100"
               size={30}
             />
           </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineTwitter
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
               size={30}
             />
           </Link>
@@ -45,14 +45,14 @@ const Footer = () => {
               alt="read.cv"
               width={30}
               height={30}
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100 fill-neutral-500 stroke-neutral-500"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 fill-neutral-900 stroke-neutral-900"
             /> */}
             <Icon
               // src="/readcv.svg"
               // alt="read.cv"
               width={30}
               height={30}
-              className="hover:-translate-y-1 transition-transform cursor-pointer fill-neutral-500 text-neutral-500 dark:fill-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:fill-neutral-100"
             />
           </Link>
           <Link
@@ -61,7 +61,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
               size={30}
             />
           </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineYoutube
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
               size={30}
             />
           </Link>
