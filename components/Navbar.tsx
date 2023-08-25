@@ -49,8 +49,10 @@ const Navbar = () => {
           priority
         />
         <Link href="/">
-          <div className="container lg:flex items-center space-x-2 hidden">
-            <h2 className="text-2xl font-bold mr-4">Andrew Truex</h2>
+          <div className="container lg:flex items-center space-x-2">
+            <h2 className="lg:text-2xl text-lg font-bold lg:mr-4 mr-2">
+              Andrew Truex
+            </h2>
           </div>
         </Link>
         <div className="md:hidden ">
@@ -81,19 +83,19 @@ const Navbar = () => {
                 </Link>
               )
             })}
-            {currentTheme === "dark" ? (
-              <button
-                onClick={() => setTheme("light")}
-                className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
-              >
-                <RiSunLine size={25} color="black" />
-              </button>
-            ) : (
+            {currentTheme === "light" ? (
               <button
                 onClick={() => setTheme("dark")}
                 className="bg-slate-100 p-2 rounded-xl text-black md:mx-0 mx-auto flex"
               >
                 <RiMoonFill size={25} />
+              </button>
+            ) : (
+              <button
+                onClick={() => setTheme("light")}
+                className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
+              >
+                <RiSunLine size={25} color="black" />
               </button>
             )}
           </div>
