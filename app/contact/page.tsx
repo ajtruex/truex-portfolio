@@ -5,6 +5,7 @@ import {
   FiGithub,
   FiLinkedin,
   FiInstagram,
+  FiYoutube,
   FiMail,
 } from "react-icons/fi"
 import { FaDev } from "react-icons/fa"
@@ -18,26 +19,25 @@ const Contact = () => {
         <div className="bg-neutral-900 rounded-[30px] flex items-center justify-start mb-12 p-[13px] flex-col space-y-10 ">
           <div className="flex-col lg:space-y-5 space-y-3 my-auto mx-auto">
             <Link
-              href="https://twitter.com/ATrueDev"
-              target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-purple-950 rounded-[30px] px-[10px] py-2 text-4xl"
-            >
-              <FiTwitter className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
-              Twitter
-            </Link>
-
-            <Link
               href="https://github.com/ajtruex"
               target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-purple-800 rounded-[30px] px-[10px] py-2 text-4xl"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-violet-900 rounded-[30px] px-[10px] py-2 text-4xl"
             >
               <FiGithub className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
               Github
             </Link>
             <Link
+              href="https://twitter.com/ATrueDev"
+              target="_blank"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-violet-800 rounded-[30px] px-[10px] py-2 text-4xl"
+            >
+              <FiTwitter className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
+              Twitter
+            </Link>
+            <Link
               href="https://read.cv/truex"
               target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-purple-700 rounded-[30px] px-[10px] py-2 text-4xl"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-violet-700 rounded-[30px] px-[10px] py-2 text-4xl"
             >
               <Icon
                 width={60}
@@ -49,7 +49,7 @@ const Contact = () => {
             <Link
               href="https://www.linkedin.com/in/ajtruex/"
               target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-[56px]/[60px] font-black hover:bg-purple-600 rounded-[30px] px-[10px] py-2 text-4xl"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-[56px]/[60px] tracking-tight font-black hover:bg-violet-600 rounded-[30px] px-[10px] py-2 text-4xl"
             >
               <FiLinkedin className="lg:text-6xl lg:mr-48 mr-24 text-4xl" />
               LinkedIn
@@ -57,18 +57,34 @@ const Contact = () => {
             <Link
               href="https://dev.to/truex"
               target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-purple-500 rounded-[30px] px-[10px] py-2 text-4xl"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-violet-500 rounded-[30px] px-[10px] py-2 text-4xl"
             >
               <FaDev className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
               Dev.to
             </Link>
             <Link
+              href="https://www.youtube.com/@andrewtruex"
+              target="_blank"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-[56px]/[60px] tracking-tight font-black hover:bg-purple-900 rounded-[30px] px-[10px] py-2 text-4xl"
+            >
+              <FiYoutube className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
+              YouTube
+            </Link>
+            <Link
               href="https://www.instagram.com/atruedev/"
               target="_blank"
-              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-[50px]/[60px] tracking-tight font-black hover:bg-purple-400 rounded-[30px] px-[10px] py-2 text-4xl"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-[50px]/[60px] tracking-tight font-black hover:bg-purple-800 rounded-[30px] px-[10px] py-2 text-4xl"
             >
               <FiInstagram className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
               Instagram
+            </Link>
+            <Link
+              href="mailto:andrewtruex@gmail.com"
+              target="_blank"
+              className="text-neutral-100 dark:text-neutral-100 flex items-center lg:text-6xl font-black hover:bg-purple-700 rounded-[30px] px-[10px] py-2 text-4xl"
+            >
+              <FiMail className="lg:text-6xl lg:mr-48 mr-24 text-4xl " />
+              Email
             </Link>
           </div>
         </div>
