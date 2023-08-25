@@ -6,20 +6,6 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Portfolio",
-    description: "My old personal portfolio website built with Vue.js.",
-    image: "/portfolio2.png",
-    github: "https://github.com/ajtruex/portfolio2",
-    link: "https://beta.andrewtruex.tech/",
-  },
-  {
-    name: "MovieVuer",
-    description: "A movie review aggregator made with Vue.js.",
-    image: "/movievuer.png",
-    github: "https://github.com/ajtruex/MovieVuer",
-    link: "https://movievuer.netlify.app/",
-  },
-  {
     name: "Next Movies",
     description: "A movie review aggregator made with Next.js.",
     image: "/next-movies.png",
@@ -42,6 +28,20 @@ const projects = [
     github:
       "https://github.com/raycast/extensions/tree/main/extensions/whosampled",
     link: "https://www.raycast.com/truex/whosampled",
+  },
+  {
+    name: "Portfolio",
+    description: "My old personal portfolio website built with Vue.js.",
+    image: "/portfolio2.png",
+    github: "https://github.com/ajtruex/portfolio2",
+    link: "https://beta.andrewtruex.tech/",
+  },
+  {
+    name: "MovieVuer",
+    description: "A movie review aggregator made with Vue.js.",
+    image: "/movievuer.png",
+    github: "https://github.com/ajtruex/MovieVuer",
+    link: "https://movievuer.netlify.app/",
   },
 ]
 
