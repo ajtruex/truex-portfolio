@@ -1,6 +1,19 @@
 export const projects = [
   {
     name: "Portfolio",
+    description: "My personal portfolio website built with Next.js.",
+    image: "/next-portfolio.png",
+    github: "https://github.com/ajtruex/tailwindcss-and-nextjs-portfolio",
+    link: "https://andrewtruex.tech/",
+    route: "new-portfolio",
+    tools: [
+      { name: "Next.js", image: "/nextjs-logo.png" },
+      { name: "Tailwind CSS", image: "/tailwind-logo.png" },
+      { name: "Vercel", image: "/vercel-logo.png" },
+    ],
+  },
+  {
+    name: "Vue.js Portfolio",
     description: "My old personal portfolio website built with Vue.js.",
     image: "/portfolio2.png",
     github: "https://github.com/ajtruex/portfolio2",
