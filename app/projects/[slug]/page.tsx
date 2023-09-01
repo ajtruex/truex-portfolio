@@ -89,7 +89,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           {project.tools.map((tool, idx) => {
             return (
               <div
-                className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-[#111111] w-[200px] md:w-full"
+                className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
                 key={idx}
               >
                 <p className="font-md text-xl text-white">{tool.name}</p>

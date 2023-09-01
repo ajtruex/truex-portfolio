@@ -96,7 +96,7 @@ const Stack = () => {
               href={item.link}
               key={idx}
               target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-[#111111] w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
             >
               {/* <div
                 key={idx}
@@ -130,7 +130,7 @@ const Stack = () => {
               href={item.link}
               key={idx}
               target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-[#111111] w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
             >
               <Image
                 src={item.image}
