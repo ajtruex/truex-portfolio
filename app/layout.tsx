@@ -1,11 +1,25 @@
-"use client"
 import "../styles/globals.css"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/Navbar"
-import { ThemeProvider } from "next-themes"
+import { Provider } from "./theme-provider"
 import Footer from "@/components/Footer"
 import Script from "next/script"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Andrew Truex",
+  description: "Andrew Truex's Portfolio Website",
+  // icons: {
+  //   rel: "icon",
+  //   icon: "/happy-mac.ico",
+  //   sizes: "32x32",
+  // },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+}
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -69,7 +83,9 @@ export default function RootLayout({
         `}
         </Script>
       </head>
-      <body className="dark:bg-black">
+      <body
+      // className="dark:bg-black"
+      >
         <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
         <link
           rel="apple-touch-icon"
@@ -82,12 +98,12 @@ export default function RootLayout({
           href="/favicon-180-precomposed.png"
         />
         <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
-          <ThemeProvider enableSystem={true} attribute="class">
+          <Provider>
             <Navbar />
             {children}
             <Analytics />
             <Footer />
-          </ThemeProvider>
+          </Provider>
         </main>
       </body>
     </html>
