@@ -10,6 +10,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Andrew Truex",
   description: "Andrew Truex's Portfolio Website",
+  keywords: ["Andrew Truex", "Portfolio", "Next.js", "React", "JavaScript"],
+  creator: "Andrew Truex",
+  publisher: "Andrew Truex",
   openGraph: {
     title: "Andrew Truex",
     description: "Andrew Truex's Portfolio Website",
