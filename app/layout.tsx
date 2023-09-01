@@ -10,6 +10,22 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Andrew Truex",
   description: "Andrew Truex's Portfolio Website",
+  openGraph: {
+    title: "Andrew Truex",
+    description: "Andrew Truex's Portfolio Website",
+    url: "https://andrewtruex.tech",
+    siteName: "Andrew Truex",
+    images: [
+      {
+        url: "/memoji-mac.png",
+      },
+      {
+        url: "/win98.ico",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Andrew Truex",
