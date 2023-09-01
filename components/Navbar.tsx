@@ -42,6 +42,7 @@ const Navbar = () => {
   useEffect(() => {
     setMounted(true)
   }, [])
+
   return (
     <div className="flex flex-col items-center md:items-start md:px-5">
       <div className="flex cursor-pointer flex-row items-center justify-center space-x-3">
@@ -88,37 +89,27 @@ const Navbar = () => {
                 </Link>
               )
             })}
-
-            <button
-              className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              {mounted === true && (
-                <div>
-                  {theme === "dark" ? (
-                    <RiSunLine size={25} color="black" />
-                  ) : (
+            {mounted === true ? (
+              <div>
+                {currentTheme === "light" ? (
+                  <button
+                    onClick={() => setTheme("dark")}
+                    className="bg-slate-100 p-2 rounded-xl text-black md:mx-0 mx-auto flex"
+                  >
                     <RiMoonFill size={25} />
-                  )}
-                </div>
-              )}
-            </button>
-
-            {/* {currentTheme === "light" ? (
-              <button
-                onClick={() => setTheme("dark")}
-                className="bg-slate-100 p-2 rounded-xl text-black md:mx-0 mx-auto flex"
-              >
-                <RiMoonFill size={25} />
-              </button>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setTheme("light")}
+                    className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
+                  >
+                    <RiSunLine size={25} color="black" />
+                  </button>
+                )}
+              </div>
             ) : (
-              <button
-                onClick={() => setTheme("light")}
-                className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
-              >
-                <RiSunLine size={25} color="black" />
-              </button>
-            )} */}
+              <div className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex h-[25px] w-[25px]"></div>
+            )}
           </div>
         </div>
       </div>
