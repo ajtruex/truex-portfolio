@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+"use client"
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "next-themes"
@@ -32,11 +33,15 @@ const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
   const [navbar, setNavbar] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   const handleLinkClick = () => {
     setNavbar(false)
   }
 
+  useEffect(() => {
+    setMounted(true)
+  }, [])
   return (
     <div className="flex flex-col items-center md:items-start md:px-5">
       <div className="flex cursor-pointer flex-row items-center justify-center space-x-3">
@@ -83,7 +88,23 @@ const Navbar = () => {
                 </Link>
               )
             })}
-            {currentTheme === "light" ? (
+
+            <button
+              className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {mounted === true && (
+                <div>
+                  {theme === "dark" ? (
+                    <RiSunLine size={25} color="black" />
+                  ) : (
+                    <RiMoonFill size={25} />
+                  )}
+                </div>
+              )}
+            </button>
+
+            {/* {currentTheme === "light" ? (
               <button
                 onClick={() => setTheme("dark")}
                 className="bg-slate-100 p-2 rounded-xl text-black md:mx-0 mx-auto flex"
@@ -97,7 +118,7 @@ const Navbar = () => {
               >
                 <RiSunLine size={25} color="black" />
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>
