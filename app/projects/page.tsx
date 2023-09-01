@@ -6,7 +6,7 @@ import { Metadata } from "next"
 export const metadata = {
   title: "Andrew Truex - Projects",
   icons: {
-    icon: "/directory-computer.ico",
+    icon: "/directory_computer.ico",
   },
 }
 // const projects = [

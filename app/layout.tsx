@@ -10,11 +10,22 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Andrew Truex",
   description: "Andrew Truex's Portfolio Website",
-  // icons: {
-  //   rel: "icon",
-  //   icon: "/happy-mac.ico",
-  //   sizes: "32x32",
-  // },
+  twitter: {
+    card: "summary_large_image",
+    title: "Andrew Truex",
+    description: "Andrew Truex's Portfolio Website",
+    siteId: "1197062210507431937",
+    creator: "@atruedev",
+    creatorId: "1197062210507431937",
+    images: ["/memoji-mac.png"],
+  },
+  icons: {
+    icon: "/win98.ico",
+    apple: [
+      { url: "/favicon-120-precomposed.png", sizes: "180x180" },
+      { url: "/favicon-180-precomposed.png", sizes: "180x180" },
+    ],
+  },
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -39,7 +50,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head>
-        <title>Andrew Truex</title>
+        {/* <title>Andrew Truex</title> */}
         <script
           defer
           src="https://unpkg.com/@tinybirdco/flock.js"
@@ -86,7 +97,7 @@ export default function RootLayout({
       <body
       // className="dark:bg-black"
       >
-        <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
+        {/* <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
         <link
           rel="apple-touch-icon"
           sizes="120x120"
@@ -96,7 +107,7 @@ export default function RootLayout({
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicon-180-precomposed.png"
-        />
+        /> */}
         <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
           <Provider>
             <Navbar />
