@@ -18,9 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/memoji-mac.png",
-      },
-      {
-        url: "/win98.ico",
+        width: 421,
+        height: 421,
       },
     ],
     locale: "en_US",
