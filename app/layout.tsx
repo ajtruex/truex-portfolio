@@ -91,11 +91,16 @@ export default function RootLayout({
           src="https://analytics.umami.is/script.js"
           data-website-id="c1ecb30b-bd10-49c9-8eae-34471d9e3830"
         ></Script>
-        <script
+        <Script
+          async
+          src="https://umami.andrewtruex.tech/script.js"
+          data-website-id="fa4e4462-c19f-4eba-ab1a-bfd113bde029"
+        ></Script>
+        {/* <script
           async
           src="http://localhost:3000/script.js"
           data-website-id="c60034a0-af9e-437b-b046-a1ea88f1a36e"
-        ></script>
+        ></script> */}
         <script
           defer
           src="https://static.cloudflareinsights.com/beacon.min.js"
