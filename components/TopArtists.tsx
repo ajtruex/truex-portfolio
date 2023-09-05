@@ -1,6 +1,7 @@
 "use client"
 import useSWR from "swr"
 import fetcher from "../lib/fetcher"
+import Link from "next/link"
 
 export type TopArtistsResponse = {
   name: string
@@ -22,15 +23,21 @@ export default function TopArtists() {
             Top Artists
           </h2>
           <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            according to last 4 weeks
+            last 4 weeks
           </p>
         </div>
         <div className="flex flex-col ">
           {data?.map((artist, index) => (
-            <div
+            // <div
+            //   key={index}
+            //   className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
+            //   onClick={() => window.open(artist.url, "_blank")}
+            // >
+            <Link
+              href={artist.url}
               key={index}
               className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-              onClick={() => window.open(artist.url, "_blank")}
+              target="_blank"
             >
               <p className="dark:text-zinc-200 text-zinc-900 m-0">
                 {artist.name}
@@ -40,7 +47,7 @@ export default function TopArtists() {
                 {artist.playcount}{" "}
                 <span className="dark:text-zinc-500 text-zinc-600">plays</span>
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -50,15 +57,16 @@ export default function TopArtists() {
             Top Artists
           </h2>
           <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            according to last year
+            last year
           </p>
         </div>
         <div className="flex flex-col ">
           {year?.map((artist, index) => (
-            <div
+            <Link
+              href={artist.url}
               key={index}
               className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-              onClick={() => window.open(artist.url, "_blank")}
+              target="_blank"
             >
               <p className="dark:text-zinc-200 text-zinc-900 m-0">
                 {artist.name}
@@ -68,7 +76,7 @@ export default function TopArtists() {
                 {artist.playcount}{" "}
                 <span className="dark:text-zinc-500 text-zinc-600">plays</span>
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
