@@ -1,6 +1,7 @@
 "use client"
 import fetcher from "../lib/fetcher"
 import useSWR from "swr"
+import Link from "next/link"
 
 export type TopTracksResponse = {
   name: string
@@ -23,16 +24,15 @@ export default function TopTracks() {
           <h2 className="m-0 dark:text-zinc-200 text-zinc-900 font-black text-xl">
             Top Tracks
           </h2>
-          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            according to last 4 weeks
-          </p>
+          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">Month</p>
         </div>
         <div className="flex flex-col ">
           {data?.map((track, index) => (
-            <div
+            <Link
+              href={track.url}
               key={index}
               className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-              onClick={() => window.open(track.url, "_blank")}
+              target="_blank"
             >
               <p className="dark:text-zinc-200 text-zinc-900 m-0 flex flex-col">
                 {track.name}{" "}
@@ -43,7 +43,7 @@ export default function TopTracks() {
               <p className="dark:text-zinc-200 text-zinc-900 m-0">
                 {track.playcount} <span className="text-zinc-500">plays</span>
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -52,16 +52,15 @@ export default function TopTracks() {
           <h2 className="m-0 dark:text-zinc-200 text-zinc-900 font-black text-xl">
             Top Tracks
           </h2>
-          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            according to last year
-          </p>
+          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">Year</p>
         </div>
         <div className="flex flex-col ">
           {year?.map((track, index) => (
-            <div
+            <Link
+              href={track.url}
               key={index}
               className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-              onClick={() => window.open(track.url, "_blank")}
+              target="_blank"
             >
               <p className="dark:text-zinc-200 text-zinc-900 m-0 flex flex-col">
                 {track.name}{" "}
@@ -72,7 +71,7 @@ export default function TopTracks() {
               <p className="dark:text-zinc-200 text-zinc-900 m-0">
                 {track.playcount} <span className="text-zinc-500">plays</span>
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

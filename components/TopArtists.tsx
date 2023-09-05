@@ -22,17 +22,10 @@ export default function TopArtists() {
           <h2 className="m-0 dark:text-zinc-200 text-zinc-900 font-black text-xl">
             Top Artists
           </h2>
-          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            last 4 weeks
-          </p>
+          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">Month</p>
         </div>
         <div className="flex flex-col ">
           {data?.map((artist, index) => (
-            // <div
-            //   key={index}
-            //   className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-            //   onClick={() => window.open(artist.url, "_blank")}
-            // >
             <Link
               href={artist.url}
               key={index}
@@ -56,9 +49,7 @@ export default function TopArtists() {
           <h2 className="m-0 dark:text-zinc-200 text-zinc-900 font-black text-xl">
             Top Artists
           </h2>
-          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">
-            last year
-          </p>
+          <p className="m-0 dark:text-zinc-400 text-zinc-700 text-sm">Year</p>
         </div>
         <div className="flex flex-col ">
           {year?.map((artist, index) => (
