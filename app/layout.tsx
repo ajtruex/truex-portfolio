@@ -95,6 +95,7 @@ export default function RootLayout({
           async
           src="https://umami.andrewtruex.tech/script.js"
           data-website-id="fa4e4462-c19f-4eba-ab1a-bfd113bde029"
+          data-domains="andrewtruex.tech,www.andrewtruex.tech, tailwindcss-and-nextjs-portfolio-truex.vercel.app, tailwindcss-and-nextjs-portfolio-git-main-truex.vercel.app"
         ></Script>
         {/* <script
           async
