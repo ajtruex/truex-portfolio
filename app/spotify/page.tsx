@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 // import Layout from "../components/Layout";
-// import NowPlaying from "../components/NowPlaying";
+import NowPlaying from "@/components/NowPlaying"
 import TopArtists from "@/components/TopArtists"
 import TopTracks from "@/components/TopTracks"
 
@@ -17,7 +17,7 @@ export default function About() {
             My Spotify stats, updated every 24 hours.
           </p>
         </div>
-        {/* <NowPlaying /> */}
+        <NowPlaying />
         <TopArtists />
         <TopTracks />
       </section>
