@@ -4,7 +4,7 @@ import { SiSpotify } from "react-icons/si"
 
 async function getNpOrRpSong() {
   const res = await fetch(
-    "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=ajtruex&api_key=${process.env.LASTFM_API_KEY}&format=json&limit=2",
+    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=ajtruex&api_key=${process.env.LASTFM_API_KEY}&format=json&limit=2`,
     {
       headers: {
         "Content-Type": "application/json",
