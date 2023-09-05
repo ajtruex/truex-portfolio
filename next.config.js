@@ -11,6 +11,12 @@ const nextConfig = {
         port: "",
         pathname: "/v1/17/17/1685448000000/**",
       },
+      {
+        protocol: "https",
+        hostname: "lastfm.freetls.fastly.net",
+        port: "",
+        pathname: "/i/u/300x300/**",
+      },
     ],
   },
   typescript: {
