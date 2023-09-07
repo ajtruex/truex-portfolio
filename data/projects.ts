@@ -4,7 +4,7 @@ export const projects = [
     description: "A movie review aggregator made with Next.js.",
     image: "/next-movies.png",
     github: "https://github.com/ajtruex/next-movies",
-    link: "http://movies.andrewtruex.tech/",
+    link: "https://movies.andrewtruex.tech/",
     route: "NextMovies",
     tools: [
       { name: "Next.js", image: "/nextjs-logo.png" },
