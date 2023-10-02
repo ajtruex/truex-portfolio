@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import { FiHeadphones } from "react-icons/fi"
 
 const NAV_ITEMS = [
   {
@@ -26,6 +27,11 @@ const NAV_ITEMS = [
   {
     label: "Contact",
     page: "/contact",
+  },
+  {
+    label: "Spotify",
+    page: "/spotify",
+    icon: "FiHeadphones",
   },
 ]
 
@@ -56,7 +62,7 @@ const Navbar = () => {
         />
         <Link href="/">
           <div className="container lg:flex items-center space-x-2">
-            <h2 className="lg:text-2xl text-lg font-bold lg:mr-4 mr-2">
+            <h2 className="lg:text-2xl text-lg font-bold lg:mr-4 mr-2 tracking-tight">
               Andrew Truex
             </h2>
           </div>
@@ -81,11 +87,20 @@ const Navbar = () => {
                   key={idx}
                   href={item.page}
                   className={
-                    "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center"
+                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center"
                   }
                   onClick={handleLinkClick}
                 >
-                  {item.label}
+                  {item.icon === "FiHeadphones" ? (
+                    <div className="relative inline-block group">
+                      <FiHeadphones size={25} />
+                      <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-20 dark:bg-black rounded shadow-lg p-1.5 hidden md:inline-block -ml-8 mt-4 leading-none">
+                        {item.label}
+                      </div>
+                    </div>
+                  ) : (
+                    item.label
+                  )}
                 </Link>
               )
             })}
