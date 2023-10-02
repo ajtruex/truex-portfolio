@@ -37,7 +37,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
                 className="mt-2 cursor-pointer hover:-translate-y-1 transition-transform"
               />
             </Link>
-            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-2 text-lg font-semibold">
+            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-1 text-lg font-semibold -left-1/2 ml-4">
               <p>Demo</p>
             </div>
           </div>
@@ -50,7 +50,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
               {/* Source */}
               <BsGithub size={30} className="mt-2  cursor-pointer" />
             </Link>
-            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-1 text-lg font-semibold">
+            <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-10 bg-slate-800 rounded-md shadow-lg p-1 text-lg font-semibold -left-1/2">
               <p>Source</p>
             </div>
           </div>
