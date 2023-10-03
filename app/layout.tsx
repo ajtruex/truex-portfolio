@@ -8,6 +8,7 @@ import Script from "next/script"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://andrewtruex.tech"),
   title: "Andrew Truex",
   description: "Andrew Truex's Portfolio Website",
   keywords: ["Andrew Truex", "Portfolio", "Next.js", "React", "JavaScript"],
@@ -132,7 +133,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/favicon-180-precomposed.png"
         /> */}
-        <main className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
+        <main className="mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
           <Provider>
             <Navbar />
             {children}
