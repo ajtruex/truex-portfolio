@@ -4,7 +4,7 @@ import NowPlaying from "@/components/NowPlaying"
 import TopArtists from "@/components/TopArtists"
 import TopTracks from "@/components/TopTracks"
 
-export default function About() {
+export default function Spotify() {
   return (
     <div className="min-h-screen h-full p-8 flex flex-col items-center mx-auto font-circular">
       <section className="flex flex-col justify-between mt-16 lg:mt-0 md:mt-0 prose gap-6 mb-12">
