@@ -59,14 +59,14 @@ const Projects = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <div>
+              <div className="hover:-translate-y-2 transition-transform transform">
                 <Link href={`/projects/${project.route}`}>
                   <Image
                     src={project.image}
                     alt=""
                     width={1000}
                     height={1000}
-                    className="rounded-xl shadow-xl hover:opacity-70"
+                    className="rounded-xl shadow-xl hover:opacity-70 "
                   />
                   <h1 className="text-4xl font-semibold mb-3 mt-6 text-center">
                     {project.name}
