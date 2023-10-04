@@ -14,6 +14,8 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         circular: ["var(--font-circular)"],
+        seasons: ["var(--font-seasons)"],
+        garamond: ["var(--font-garamond)"],
       },
       animation: {
         bounce:
