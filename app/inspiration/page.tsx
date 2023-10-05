@@ -35,7 +35,10 @@ export default function Inspiration() {
         </p>
       </div>
       <video controls width="500" className="rounded-xl rotate-3 my-12 mr-96">
-        <source src="/rapisreligion2023-08-21__021616.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/ajtruex/video/upload/v1696464400/rapisreligion2023-08-21__021616.mov"
+          type="video/mp4"
+        />
       </video>
     </div>
   )
