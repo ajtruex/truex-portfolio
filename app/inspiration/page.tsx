@@ -6,7 +6,7 @@ export default function Inspiration() {
       </h1>
       <video
         controls
-        poster="/kanye-poster.png"
+        poster="https://res.cloudinary.com/ajtruex/image/upload/v1696992282/kanye-poster.webp"
         className="rounded-xl -rotate-6 my-12 mb-20 sm:mb-0"
       >
         <source
@@ -41,7 +41,7 @@ export default function Inspiration() {
       </video>
       <video
         controls
-        poster="/ChrisCole-NewBlood.png"
+        poster="https://res.cloudinary.com/ajtruex/image/upload/v1696992280/ChrisCole-NewBlood.webp"
         width="1440"
         height="1080"
       >
