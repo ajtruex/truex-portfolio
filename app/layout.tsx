@@ -108,8 +108,11 @@ export default function RootLayout({
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token": "419da8fb28a9475f88966976ff56def9"}'
         ></script>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZJ5BZMBEMM" />
-        <Script id="google-analytics">
+        <Script
+          defer
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZJ5BZMBEMM"
+        />
+        <Script defer id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
