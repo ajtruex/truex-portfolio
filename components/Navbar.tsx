@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
-import { FiHeadphones } from "react-icons/fi"
+import { FiHeadphones, FiZap } from "react-icons/fi"
 
 const NAV_ITEMS = [
   {
@@ -32,6 +32,11 @@ const NAV_ITEMS = [
     label: "Spotify",
     page: "/spotify",
     icon: "FiHeadphones",
+  },
+  {
+    label: "Inspiration",
+    page: "/inspiration",
+    icon: "FiZap",
   },
 ]
 
@@ -94,6 +99,13 @@ const Navbar = () => {
                   {item.icon === "FiHeadphones" ? (
                     <div className="relative inline-block group">
                       <FiHeadphones size={25} />
+                      <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-20 dark:bg-black rounded shadow-lg p-1.5 hidden md:inline-block -ml-8 mt-4 leading-none">
+                        {item.label}
+                      </div>
+                    </div>
+                  ) : item.icon === "FiZap" ? (
+                    <div className="relative inline-block group">
+                      <FiZap size={25} />
                       <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-20 dark:bg-black rounded shadow-lg p-1.5 hidden md:inline-block -ml-8 mt-4 leading-none">
                         {item.label}
                       </div>
