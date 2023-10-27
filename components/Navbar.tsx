@@ -28,6 +28,9 @@ const NAV_ITEMS = [
     label: "Contact",
     page: "/contact",
   },
+]
+
+const ICON_ITEMS = [
   {
     label: "Spotify",
     page: "/spotify",
@@ -56,9 +59,9 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col items-center md:items-start md:px-5">
-      <div className="flex cursor-pointer flex-row items-center justify-center space-x-3">
+      <div className="flex cursor-pointer flex-row items-center justify-center md:max-lg:space-x-1 space-x-3">
         <Image
-          className="shadow-2xl w-[60px] rounded-full border-none bg-black dark:bg-hoverBlack"
+          className="shadow-xl w-[60px] rounded-full border-none bg-black dark:bg-hoverBlack"
           src="/memoji-mac.png"
           alt=""
           width={60}
@@ -67,7 +70,7 @@ const Navbar = () => {
         />
         <Link href="/">
           <div className="container lg:flex items-center space-x-2">
-            <h2 className="lg:text-2xl text-lg font-bold lg:mr-4 mr-2 tracking-tight">
+            <h2 className="lg:text-2xl text-xl font-bold lg:mr-4 mr-2 tracking-tight">
               Andrew Truex
             </h2>
           </div>
@@ -85,8 +88,23 @@ const Navbar = () => {
         } md:block`}
       >
         <div className="flex-1 justify-self-center pb-3 mt-2 md:block md:pb-0 md:mt-0">
-          <div className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
+          <div className="items-center justify-center space-y-4 md:flex xl:space-x-6 lg:space-x-5 md:max-lg:space-x-4 md:space-y-0">
             {NAV_ITEMS.map((item, idx) => {
+              return (
+                <Link
+                  key={idx}
+                  href={item.page}
+                  className={
+                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center font-semibold"
+                  }
+                  onClick={handleLinkClick}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
+            <div className="md:border-l md:border-gray-600 md:h-10 md:mx-4" />
+            {ICON_ITEMS.map((item, idx) => {
               return (
                 <Link
                   key={idx}
@@ -116,6 +134,7 @@ const Navbar = () => {
                 </Link>
               )
             })}
+
             {mounted === true ? (
               <div>
                 {currentTheme === "light" ? (
