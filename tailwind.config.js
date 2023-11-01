@@ -21,6 +21,7 @@ module.exports = {
         bounce:
           "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        pulse: "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         bounce: {
@@ -30,6 +31,12 @@ module.exports = {
         slideUp: {
           from: { transform: "translateY(100%)" },
           to: { transform: "translateY(0)" },
+        },
+        pulse: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0.5 },
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
         },
       },
     },

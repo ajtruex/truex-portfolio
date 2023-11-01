@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
-import { RiMoonFill, RiSunLine } from "react-icons/ri"
+import { RiMoonFill, RiSunLine, RiLoader4Line } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import { FiHeadphones, FiZap } from "react-icons/fi"
 import clsx from "clsx"
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:fixed z-10 cursor-pointer flex-row items-center md:rounded-full rounded-xl border bg-white bg-opacity-95 px-6 py-2 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10 dark:bg-black md:dark:bg-opacity-75 dark:bg-opacity-90 lg:left-1/2 md:flex lg:-translate-x-1/2 lg:transform md:ml-12 top-24 md:left-1/4 inset-x-0 md:inset-x-auto absolute left-0 md:top-8 ${
+        className={`md:fixed z-10 flex-row items-center md:rounded-full rounded-xl border bg-white bg-opacity-95 px-6 py-2 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10 dark:bg-black md:dark:bg-opacity-75 dark:bg-opacity-90 lg:left-1/2 md:flex lg:-translate-x-1/2 lg:transform md:ml-12 top-24 md:left-1/4 inset-x-0 md:inset-x-auto absolute left-0 md:top-8 ${
           navbar ? "block" : "hidden"
         } md:block`}
       >
@@ -100,7 +100,7 @@ const Navbar = () => {
                   className={clsx(
                     "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center font-semibold",
                     {
-                      "dark:text-neutral-600":
+                      "text-zinc-400 dark:text-neutral-600":
                         pathname === item.page && pathname != "/",
                     }
                   )}
@@ -119,7 +119,8 @@ const Navbar = () => {
                   className={clsx(
                     "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center",
                     {
-                      "dark:text-neutral-600": pathname === item.page,
+                      "dark:text-neutral-600 text-zinc-500":
+                        pathname === item.page,
                     }
                   )}
                   onClick={handleLinkClick}
@@ -164,7 +165,13 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <div className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex h-[25px] w-[25px]"></div>
+              <div className="bg-slate-100 p-2 rounded-xl md:mx-0 mx-auto flex">
+                <RiLoader4Line
+                  size={25}
+                  color="black"
+                  className="animate-pulse"
+                />
+              </div>
             )}
           </div>
         </div>
