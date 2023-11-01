@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 import { FiHeadphones, FiZap } from "react-icons/fi"
+import clsx from "clsx"
 
 const NAV_ITEMS = [
   {
@@ -48,6 +50,7 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme
   const [navbar, setNavbar] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
 
   const handleLinkClick = () => {
     setNavbar(false)
@@ -94,9 +97,13 @@ const Navbar = () => {
                 <Link
                   key={idx}
                   href={item.page}
-                  className={
-                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center font-semibold"
-                  }
+                  className={clsx(
+                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center font-semibold",
+                    {
+                      "dark:text-neutral-600":
+                        pathname === item.page && pathname != "/",
+                    }
+                  )}
                   onClick={handleLinkClick}
                 >
                   {item.label}
@@ -109,9 +116,12 @@ const Navbar = () => {
                 <Link
                   key={idx}
                   href={item.page}
-                  className={
-                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center"
-                  }
+                  className={clsx(
+                    "flex flex-col text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 text-center items-center justify-center",
+                    {
+                      "dark:text-neutral-600": pathname === item.page,
+                    }
+                  )}
                   onClick={handleLinkClick}
                 >
                   {item.icon === "FiHeadphones" ? (
