@@ -12,6 +12,13 @@ import { FaDev } from "react-icons/fa"
 import { SiLastdotfm, SiSpotify } from "react-icons/si"
 import Icon from "@/components/Icon"
 
+export const metadata = {
+  title: "Contact",
+  icons: {
+    icon: "/phone_desk.ico",
+  },
+}
+
 const Contact = () => {
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">

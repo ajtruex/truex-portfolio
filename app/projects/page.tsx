@@ -4,7 +4,7 @@ import Link from "next/link"
 import { projects } from "@/data/projects"
 import { Metadata } from "next"
 export const metadata = {
-  title: "Andrew Truex - Projects",
+  title: "Projects",
   icons: {
     icon: "/directory_computer.ico",
   },

@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Andrew Truex - Stack",
+  title: "Stack",
   icons: {
     icon: "/happy-mac.ico",
   },
