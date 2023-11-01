@@ -37,6 +37,14 @@ const garamond = localFont({
   display: "swap",
   variable: "--font-garamond",
 })
+
+export const metadata = {
+  title: "Inspiration",
+  icons: {
+    icon: "/world.ico",
+  },
+}
+
 export default function InspoLayout({
   children, // will be a page or nested layout
 }: {

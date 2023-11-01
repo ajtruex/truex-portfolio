@@ -27,6 +27,13 @@ const circular = localFont({
   variable: "--font-circular",
 })
 
+export const metadata = {
+  title: "Spotify",
+  icons: {
+    icon: "/sound.ico",
+  },
+}
+
 export default function SpotifyLayout({
   children, // will be a page or nested layout
 }: {

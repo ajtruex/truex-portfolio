@@ -9,7 +9,10 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://andrewtruex.tech"),
-  title: "Andrew Truex",
+  title: {
+    template: "Andrew Truex - %s",
+    default: "Andrew Truex",
+  },
   description: "Andrew Truex's Portfolio Website",
   keywords: ["Andrew Truex", "Portfolio", "Next.js", "React", "JavaScript"],
   creator: "Andrew Truex",
@@ -44,10 +47,6 @@ export const metadata: Metadata = {
       { url: "/favicon-120-precomposed.png", sizes: "180x180" },
       { url: "/favicon-180-precomposed.png", sizes: "180x180" },
     ],
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
   },
 }
 
