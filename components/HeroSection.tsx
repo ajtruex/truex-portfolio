@@ -23,11 +23,12 @@ export const HeroSection = () => {
             Hi, I&#39;m Andrew.
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a web developer with a focus on unique web experiences and products, preferably in the realm of movies, culture and comedy.
+            I&#39;m a web developer with a focus on unique web experiences and
+            products, preferably in the realm of movies, culture and comedy.
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 cursor-pointer"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -46,6 +47,7 @@ export const HeroSection = () => {
           smooth={true}
           offset={-100}
           duration={500}
+          className="cursor-pointer"
         >
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
