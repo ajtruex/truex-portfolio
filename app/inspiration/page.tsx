@@ -7,7 +7,7 @@ export default function Inspiration() {
       <video
         controls
         poster="https://d34073qwlt06j3.cloudfront.net/kanye-poster.webp"
-        className="rounded-xl -rotate-6 my-12 mb-20 sm:mb-0"
+        className="rounded-xl my-12 mb-20 sm:mb-0"
       >
         <source
           src="https://d34073qwlt06j3.cloudfront.net/KanyeWestPerformsStrongerAndHeyMama.mp4"
@@ -33,23 +33,30 @@ export default function Inspiration() {
           &quot;remember that you have to die&quot;
         </p>
       </div>
-      <video controls width="500" className="rounded-xl rotate-3 my-12 mr-96">
-        <source
-          src="https://res.cloudinary.com/ajtruex/video/upload/q_auto:best/v1696464400/rapisreligion2023-08-21__021616.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <video
-        controls
-        poster="https://d34073qwlt06j3.cloudfront.net/ChrisCole-NewBlood.webp"
-        width="500"
-        className="rounded-xl my-12 ml-96"
-      >
-        <source
-          src="https://d34073qwlt06j3.cloudfront.net/ChrisCole-NewBlood.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div className="flex space-x-4 mt-12">
+        <video controls width="500" className="rounded-xl">
+          <source src="/seth-rogen-inspo.mp4" type="video/mp4" />
+        </video>
+        <div className="flex flex-col justify-center space-y-8  w-2/3">
+          <video controls className="rounded-xl">
+            <source
+              src="https://res.cloudinary.com/ajtruex/video/upload/q_auto:best/v1696464400/rapisreligion2023-08-21__021616.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <video
+            controls
+            poster="https://d34073qwlt06j3.cloudfront.net/ChrisCole-NewBlood.webp"
+            className="rounded-xl"
+          >
+            <source
+              src="https://d34073qwlt06j3.cloudfront.net/ChrisCole-NewBlood.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
     </div>
   )
 }
