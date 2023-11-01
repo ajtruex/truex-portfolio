@@ -7,13 +7,14 @@ const skills = [
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "JavaScript" },
-  { skill: "Vue.js" },
-  { skill: "Python" },
+  { skill: "TypeScript" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
+  { skill: "Vue.js" },
+  { skill: "Python" },
   { skill: "Git" },
-  { skill: "GitHub" },
+  { skill: "Vercel" },
 ]
 
 const AboutSection = () => {
@@ -37,10 +38,9 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              My mission is to create software that not only functions
-              seamlessly but also evokes emotions and leaves a lasting
-              impression. I love creating software that makes people feel
-              something.
+              My mission is to create software that not only performs seamlessly
+              but also evokes emotions and leaves a lasting impression. I love
+              creating software that makes people feel something.
             </p>
             <br />
             <p>
