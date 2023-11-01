@@ -33,11 +33,11 @@ export default function Inspiration() {
           &quot;remember that you have to die&quot;
         </p>
       </div>
-      <div className="flex space-x-4 mt-12">
-        <video controls width="500" className="rounded-xl">
+      <div className="flex sm:flex-row flex-col sm:space-x-4 mt-12">
+        <video controls className="rounded-xl sm:w-1/2">
           <source src="/seth-rogen-inspo.mp4" type="video/mp4" />
         </video>
-        <div className="flex flex-col justify-center space-y-8  w-2/3">
+        <div className="flex flex-col justify-center md:space-y-8 space-y-4  sm:w-2/3">
           <video controls className="rounded-xl">
             <source
               src="https://res.cloudinary.com/ajtruex/video/upload/q_auto:best/v1696464400/rapisreligion2023-08-21__021616.mp4"
