@@ -125,9 +125,7 @@ export default function RootLayout({
         `}
         </Script>
       </head>
-      <body
-      // className="dark:bg-black"
-      >
+      <body>
         {/* <link rel="icon" href="/win98.ico" sizes="16x16 32x32" />
         <link
           rel="apple-touch-icon"
