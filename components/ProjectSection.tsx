@@ -10,7 +10,7 @@ const projects = [
     description: "A movie review aggregator made with Next.js.",
     image: "/next-movies.png",
     github: "https://github.com/ajtruex/next-movies",
-    link: "http://movies.andrewtruex.tech/",
+    link: "http://movies.andrewtruex.com/",
   },
   {
     name: "BS Upcycled Home Decor",
@@ -34,7 +34,7 @@ const projects = [
     description: "My old personal portfolio website built with Vue.js.",
     image: "/portfolio2.png",
     github: "https://github.com/ajtruex/portfolio2",
-    link: "https://beta.andrewtruex.tech/",
+    link: "https://beta.andrewtruex.com/",
   },
   {
     name: "MovieVuer",

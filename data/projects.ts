@@ -4,7 +4,7 @@ export const projects = [
     description: "A movie review aggregator made with Next.js.",
     image: "/next-movies.png",
     github: "https://github.com/ajtruex/next-movies",
-    link: "https://movies.andrewtruex.tech/",
+    link: "https://movies.andrewtruex.com/",
     route: "NextMovies",
     tools: [
       { name: "Next.js", image: "/nextjs-logo.png" },
@@ -49,7 +49,7 @@ export const projects = [
     description: "My personal portfolio website built with Next.js.",
     image: "/next-portfolio.png",
     github: "https://github.com/ajtruex/tailwindcss-and-nextjs-portfolio",
-    link: "https://andrewtruex.tech/",
+    link: "https://andrewtruex.com/",
     route: "new-portfolio",
     tools: [
       { name: "Next.js", image: "/nextjs-logo.png" },
@@ -62,7 +62,7 @@ export const projects = [
     description: "My old personal portfolio website built with Vue.js.",
     image: "/portfolio2.png",
     github: "https://github.com/ajtruex/portfolio2",
-    link: "https://beta.andrewtruex.tech/",
+    link: "https://beta.andrewtruex.com/",
     route: "Portfolio",
     slug: "portfolio",
     tools: [

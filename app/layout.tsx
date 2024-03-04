@@ -9,7 +9,7 @@ import Script from "next/script"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://andrewtruex.tech"),
+  metadataBase: new URL("https://andrewtruex.com"),
   title: {
     template: "Andrew Truex - %s",
     default: "Andrew Truex",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Andrew Truex",
     description: "Andrew Truex's Portfolio Website",
-    url: "https://andrewtruex.tech",
+    url: "https://andrewtruex.com",
     siteName: "Andrew Truex",
     images: [
       {
@@ -98,9 +98,9 @@ export default function RootLayout({
         ></Script>
         <Script
           async
-          src="https://umami.andrewtruex.tech/script.js"
+          src="https://umami.andrewtruex.com/script.js"
           data-website-id="fa4e4462-c19f-4eba-ab1a-bfd113bde029"
-          data-domains="andrewtruex.tech,www.andrewtruex.tech, tailwindcss-and-nextjs-portfolio-truex.vercel.app, tailwindcss-and-nextjs-portfolio-git-main-truex.vercel.app"
+          data-domains="andrewtruex.com,www.andrewtruex.com, tailwindcss-and-nextjs-portfolio-truex.vercel.app, tailwindcss-and-nextjs-portfolio-git-main-truex.vercel.app"
         ></Script>
         {/* <script
           async
@@ -142,7 +142,7 @@ export default function RootLayout({
           <Provider>
             <Navbar />
             {children}
-                <SpeedInsights />
+            <SpeedInsights />
             <Analytics />
             <Footer />
           </Provider>
