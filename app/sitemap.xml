@@ -2,58 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-  <loc>https://andrewtruex.tech/</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/about</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/about</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/stack</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/stack</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/contact</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/contact</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/NextMovies</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/spotify</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andrewtruex.com/inspiration</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://andrewtruex.com/projects/NextMovies</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/bs</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects/bs</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/whosampled</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects/whosampled</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/new-portfolio</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects/new-portfolio</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/Portfolio</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects/Portfolio</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://andrewtruex.tech/projects/MovieVuer</loc>
-  <lastmod>2023-09-01T14:41:37+00:00</lastmod>
+  <loc>https://andrewtruex.com/projects/MovieVuer</loc>
+  <lastmod>2024-03-04T10:31:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
