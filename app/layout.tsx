@@ -7,6 +7,7 @@ import { Provider } from "./theme-provider"
 import Footer from "@/components/Footer"
 import Script from "next/script"
 import type { Metadata } from "next"
+import { CSPostHogProvider } from "./providers"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://andrewtruex.com"),
@@ -140,11 +141,13 @@ export default function RootLayout({
         /> */}
         <main className="mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
           <Provider>
-            <Navbar />
-            {children}
-            <SpeedInsights />
-            <Analytics />
-            <Footer />
+            <CSPostHogProvider>
+              <Navbar />
+              {children}
+              <SpeedInsights />
+              <Analytics />
+              <Footer />
+            </CSPostHogProvider>
           </Provider>
         </main>
       </body>
