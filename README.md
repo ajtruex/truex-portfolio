@@ -1,6 +1,6 @@
 # Andrew Truex's Portfolio
 
-![andrewtruex-portfolio](https://github.com/ajtruex/tailwindcss-and-nextjs-portfolio/assets/16868226/e0db16a7-6feb-467f-90c3-0b10d72e999d)
+![andrewtruex-portfolio](https://github.com/ajtruex/tailwindcss-and-nextjs-portfolio/assets/16868226/a973f446-3454-4f8d-806e-ef50c8187ba0)
 
 ## Getting Started
 
