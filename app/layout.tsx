@@ -8,7 +8,6 @@ import Footer from "@/components/Footer"
 import Script from "next/script"
 import type { Metadata } from "next"
 import { CSPostHogProvider } from "./providers"
-import { OpenpanelProvider } from "@openpanel/nextjs"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://andrewtruex.com"),
@@ -140,14 +139,8 @@ export default function RootLayout({
           sizes="180x180"
           href="/favicon-180-precomposed.png"
         /> */}
-        <main className="flex-col justify-center max-w-5xl px-5 py-8 mx-auto align-center xl:px-0">
+        <main className="mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
           <Provider>
-            <OpenpanelProvider
-              url="https://api.openpanel.dev"
-              clientId="7a71a632-9c9d-427d-a4bc-7f140761f143"
-              trackScreenViews={true}
-            />
-
             <CSPostHogProvider>
               <Navbar />
               {children}
