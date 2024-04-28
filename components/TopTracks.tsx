@@ -30,7 +30,7 @@ export default function TopTracks() {
           </h2>
           <div className="relative">
             <button
-              className="bg-zinc-800 p-2 rounded hover:bg-zinc-800 text-sm dark:text-zinc-400 text-zinc-700"
+              className="dark:bg-zinc-800 p-2 rounded dark:hover:bg-zinc-800 text-sm dark:text-zinc-400 text-zinc-700 bg-zinc-300 hover:bg-zinc-400"
               onClick={() => setIsOpen(!isOpen)}
               value={to}
             >
@@ -38,7 +38,7 @@ export default function TopTracks() {
               <FiChevronDown className="inline ml-1" />
             </button>
             {isOpen && (
-              <div className="absolute mt-1 m-0 text-sm dark:text-zinc-400 text-zinc-700 rounded p-1 shadow bg-zinc-800">
+              <div className="absolute mt-1 m-0 text-sm dark:text-zinc-400 text-zinc-700 rounded p-1 shadow dark:bg-zinc-800 bg-zinc-300">
                 <button
                   onClick={(
                     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
