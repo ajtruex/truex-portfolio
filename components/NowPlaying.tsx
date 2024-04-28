@@ -60,7 +60,7 @@ export default async function NowPlaying() {
             <Link
               href={url}
               target="_blank"
-              className="hover:bg-zinc-900/80 rounded-lg sm:p-2 max-sm:pr-1 hover:shadow-lg cursor-pointer duration-200 break-after-all drop-shadow-lg"
+              className="hover:bg-zinc-900/80 rounded-lg p-2 max-sm:pr-1 hover:shadow-lg cursor-pointer duration-200 break-after-all drop-shadow-lg"
             >
               {songName}
             </Link>
@@ -71,7 +71,7 @@ export default async function NowPlaying() {
                 url.split("/").slice(0, 5).join("/").length + 1
               )}
               target="_blank"
-              className="hover:bg-zinc-900/80 rounded-lg sm:p-2 max-sm:pl-1 hover:shadow-lg cursor-pointer duration-200 break-before-auto"
+              className="hover:bg-zinc-900/80 rounded-lg p-2 max-sm:pl-1 hover:shadow-lg cursor-pointer duration-200 break-before-auto"
             >
               {artist}
             </Link>

@@ -6,8 +6,8 @@ import TopTracks from "@/components/TopTracks"
 
 export default function Spotify() {
   return (
-    <div className="min-h-screen h-full p-8 flex flex-col items-center mx-auto font-circular">
-      <section className="flex flex-col justify-between mt-16 lg:mt-0 md:mt-0 prose gap-6 mb-12">
+    <div className="min-h-screen h-full p-8 flex flex-col md:mx-auto mx-1 font-circular">
+      <section className="flex flex-col justify-between mt-16 md:mt-0 prose gap-4">
         <div>
           <h1 className="dark:text-zinc-200 text-zinc-900 leading-none mb-3 font-bold text-5xl">
             Spotify Stats
