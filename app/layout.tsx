@@ -139,7 +139,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/favicon-180-precomposed.png"
         /> */}
-        <main className="mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0">
+        <main className="flex-col justify-center max-w-5xl px-5 py-8 mx-auto align-center xl:px-0">
           <Provider>
             <CSPostHogProvider>
               <Navbar />
