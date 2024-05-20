@@ -28,7 +28,7 @@ export const HeroSection = () => {
           </p>
           <Link
             to="projects"
-            className="flex items-center justify-center w-1/6 px-6 py-3 mx-auto font-semibold bg-teal-600 rounded shadow cursor-pointer md:w-1/5 text-neutral-100 hover:bg-teal-700"
+            className="flex items-center justify-center w-1/6 px-6 py-3 mx-auto font-semibold bg-gradient-to-r from-indigo-500  via-violet-700  to-fuchsia-500  cursor-pointer md:w-1/5 text-white rounded-full shadow-lg"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -49,7 +49,10 @@ export const HeroSection = () => {
           duration={500}
           className="cursor-pointer"
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <HiArrowDown
+            size={35}
+            className="animate-bounce fill-violet-700 stroke-violet-700 stroke-1"
+          />
         </Link>
       </div>
     </section>
