@@ -29,20 +29,6 @@ const projects = [
       "https://github.com/raycast/extensions/tree/main/extensions/whosampled",
     link: "https://www.raycast.com/truex/whosampled",
   },
-  {
-    name: "Portfolio",
-    description: "My old personal portfolio website built with Vue.js.",
-    image: "/portfolio2.png",
-    github: "https://github.com/ajtruex/portfolio2",
-    link: "https://beta.andrewtruex.com/",
-  },
-  {
-    name: "MovieVuer",
-    description: "A movie review aggregator made with Vue.js.",
-    image: "/movievuer.png",
-    github: "https://github.com/ajtruex/MovieVuer",
-    link: "https://movievuer.netlify.app/",
-  },
 ]
 
 const ProjectSection = () => {
