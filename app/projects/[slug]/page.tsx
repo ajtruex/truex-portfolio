@@ -81,6 +81,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
           width={750}
           height={750}
           className="rounded-xl shadow-xl"
+          priority
         />
       </div>
       <h2 className="text-5xl font-bold text-center mt-12">
