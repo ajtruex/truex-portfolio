@@ -7,7 +7,7 @@ import { HiArrowDown } from "react-icons/hi"
 export const HeroSection = () => {
   return (
     <section id="home">
-      <div className="flex flex-col items-center justify-center py-16 my-10 space-x-4 text-center lg:space-x-0 sm:py-32 md:flex-row md:text-center md:py-32">
+      <div className="flex flex-col items-center justify-center py-16 my-10 space-x-4 text-center lg:space-x-0 sm:py-32 md:flex-row md:text-center md:py-8">
         <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl"
@@ -26,7 +26,7 @@ export const HeroSection = () => {
             I&#39;m a web developer with a focus on unique web experiences and
             products, preferably in the realm of movies, culture and comedy.
           </p>
-          <Link
+          {/* <Link
             to="projects"
             className="flex items-center justify-center w-1/6 px-6 py-3 mx-auto font-semibold bg-gradient-to-r from-indigo-500  via-violet-700  to-fuchsia-500  cursor-pointer md:w-1/5 text-white rounded-full shadow-lg"
             activeClass="active"
@@ -36,10 +36,10 @@ export const HeroSection = () => {
             duration={500}
           >
             Projects
-          </Link>
+          </Link> */}
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center text-center">
+      {/* <div className="flex flex-row items-center justify-center text-center">
         <Link
           to="about"
           activeClass="active"
@@ -54,7 +54,7 @@ export const HeroSection = () => {
             className="animate-bounce fill-violet-700 stroke-violet-700 stroke-1"
           />
         </Link>
-      </div>
+      </div> */}
     </section>
   )
 }
