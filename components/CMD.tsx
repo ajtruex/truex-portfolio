@@ -68,7 +68,6 @@ export default function CommandMenu() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-
           <CommandGroup heading="Navigation">
             <CommandItem onSelect={() => window.open("/", "_self")}>
               <Home className="mr-2" />
