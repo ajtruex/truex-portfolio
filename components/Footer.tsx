@@ -17,9 +17,15 @@ const Footer = () => {
       <hr className="w-full h-0.5 mx-auto mt-8 bg-black dark:bg-neutral-200 border-0" />
       <div className="mx-auto  p-4 flex flex-col text-center  md:flex-row md:justify-between">
         <div className="flex flex-row items-center justify-center space-x-1 text-black dark:text-neutral-100">
-          © 2024 Andrew Truex<a href="/" className="hover:underline"></a>
+          © 2024 Andrew Truex
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
+          <p className="md:flex flex-row items-center justify-center text-sm text-neutral-500 mr-6 hidden mt-1">
+            Command Menu{" "}
+            <kbd className="pointer-events-none inline-flex h-5 items-center rounded border bg-muted py-3 px-1.5 text-muted-foreground opacity-100 ml-2 font-sans text-sm border-neutral-500">
+              <span className="text-sm font-sans">⌘</span>K
+            </kbd>
+          </p>
           <Link
             href="https://github.com/ajtruex"
             rel="noreferrer"
