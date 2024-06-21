@@ -1,6 +1,15 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { CalendarDays } from "lucide-react"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 export const metadata = {
   title: "Stack",
@@ -67,16 +76,23 @@ const TECH_STACK = [
     name: "Next.js",
     image: "/nextjs-logo.png",
     link: "https://nextjs.org/",
+    stub: "nextjs",
+    description: "The React Framework – created and maintained by Vercel.",
   },
   {
     name: "Tailwind CSS",
-    image: "/tailwind-logo.png",
+    image: "/tailwindlabs.png",
     link: "https://tailwindcss.com/",
+    stub: "tailwindlabs",
+    description: "A utility-first CSS framework for rapid UI development.",
   },
   {
     name: "Vercel",
     image: "/vercel-logo.png",
     link: "https://vercel.com/",
+    stub: "vercel",
+    description:
+      "Build and deploy the best web experiences with the Frontend Cloud.",
   },
 ]
 
@@ -109,7 +125,7 @@ const Stack = () => {
                 height={70}
                 className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
               />
-              <div className="flex flex-col items-start space-y-2">
+              <div className="flex flex-col items-center space-y-2">
                 <h3 className="font-medium text-lg text-white">{item.name}</h3>
               </div>
               {/* </div> */}
@@ -126,24 +142,54 @@ const Stack = () => {
       <div className="mt-10 grid gap-10 justify-items-center md:justify-items-start md:grid-cols-3 lg:grid-cols-4 md:gap-5 lg:gap-x-10 lg:gap-y-10">
         {TECH_STACK.map((item, idx) => {
           return (
-            <Link
-              href={item.link}
+            <div
               key={idx}
-              target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col rounded-2xl bg-[#111111] dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
             >
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={120}
-                height={70}
-                className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
-              />
-              <div className="flex flex-col items-start space-y-2">
-                <h3 className="font-medium text-lg text-white">{item.name}</h3>
-              </div>
-              {/* </div> */}
-            </Link>
+              <HoverCard>
+                <HoverCardTrigger asChild>
+                  <Link
+                    href={item.link}
+                    key={idx}
+                    target="_blank"
+                    className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
+                  >
+                    <Image
+                      src={item.image}
+                      // src={`https://github.com/${item.stub}.png`}
+                      alt={item.name}
+                      width={120}
+                      height={70}
+                      className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 "
+                    />
+                    <div className="flex flex-col items-center space-y-2">
+                      <h3 className="font-medium text-lg text-white">
+                        {item.name}
+                      </h3>
+                    </div>
+                  </Link>
+                </HoverCardTrigger>
+                <HoverCardContent className="w-80">
+                  <div className="flex justify-between space-x-4">
+                    <Avatar>
+                      <AvatarImage
+                        src={`https://github.com/${item.stub}.png`}
+                      />
+                    </Avatar>
+                    <div className="space-y-1">
+                      <h4 className="text-sm font-semibold">{item.name}</h4>
+                      <p className="text-sm">{item.description}</p>
+
+                      {/* <div className="flex flex-col items-start space-y-2">
+                        <h3 className="font-medium text-lg text-white">
+                          {item.name}
+                        </h3>
+                      </div> */}
+                    </div>
+                  </div>
+                </HoverCardContent>
+              </HoverCard>
+            </div>
           )
         })}
       </div>
