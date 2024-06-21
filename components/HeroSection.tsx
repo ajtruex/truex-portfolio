@@ -3,6 +3,8 @@ import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
+import BoxReveal from "./magicui/box-reveal"
+import ShineBorder from "./magicui/shine-border"
 
 export const HeroSection = () => {
   return (
@@ -20,12 +22,24 @@ export const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5">
           <h1 className="mt-6 text-4xl font-bold md:text-7xl md:mt-0">
-            Hi, I&#39;m Andrew.
+            <BoxReveal boxColor={"#5046e6"} duration={0.25}>
+              <p>Hi, I&#39;m Andrew.</p>
+            </BoxReveal>
           </h1>
-          <p className="mt-4 mb-6 text-lg md:text-2xl">
-            I&#39;m a web developer with a focus on unique web experiences and
-            products, preferably in the realm of movies, culture and comedy.
-          </p>
+          <BoxReveal boxColor={"#5046e6"} duration={0.25}>
+            <p className="mt-4 mb-6 text-lg md:text-2xl">
+              I&#39;m a web developer with a focus on unique web experiences and
+              products, preferably in the realm of movies, culture and comedy.
+            </p>
+          </BoxReveal>
+          <div className="flex flex-row items-center justify-center text-center">
+            <ShineBorder
+              className="text-center text-2xl font-bold capitalize"
+              color={["#6366f1", "#6d28d9", "#d946ef"]}
+            >
+              Projects
+            </ShineBorder>
+          </div>
           {/* <Link
             to="projects"
             className="flex items-center justify-center w-1/6 px-6 py-3 mx-auto font-semibold bg-gradient-to-r from-indigo-500  via-violet-700  to-fuchsia-500  cursor-pointer md:w-1/5 text-white rounded-full shadow-lg"
