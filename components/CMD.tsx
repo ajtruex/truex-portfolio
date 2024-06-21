@@ -70,7 +70,10 @@ export default function CommandMenu({ open, setOpen }) {
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Navigation">
-            <CommandItem onSelect={() => window.open("/", "_self")}>
+            <CommandItem
+              onSelect={() => window.open("/", "_self")}
+              className="hover:cursor-pointer"
+            >
               <Home className="mr-2" />
               <span>Home</span>
             </CommandItem>
@@ -79,6 +82,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <CircleUser className="mr-2" />
 
@@ -89,6 +93,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <Code className="mr-2" />
               <span>Projects</span>
@@ -98,6 +103,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <AppWindowMac className="mr-2" />
               <span>Stack</span>
@@ -106,6 +112,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <User className="mr-2" />
               <span>Contact</span>
@@ -115,6 +122,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <Headphones className="mr-2" />
               <span>Spotify</span>
@@ -123,6 +131,7 @@ export default function CommandMenu({ open, setOpen }) {
               onSelect={(value) => {
                 window.open(value, "_self")
               }}
+              className="hover:cursor-pointer"
             >
               <Zap className="mr-2" />
               <span>Inspiration</span>
