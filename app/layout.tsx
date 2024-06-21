@@ -145,7 +145,7 @@ export default function RootLayout({
             <CSPostHogProvider>
               <Navbar />
               {children}
-              <CommandMenu />
+              <CommandMenu open={undefined} setOpen={undefined} />
               <SpeedInsights />
               <Analytics />
               <Footer />
