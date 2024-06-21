@@ -39,8 +39,9 @@ import Link from "next/link"
 //     return () => document.removeEventListener("keydown", down)
 //   }, [])
 
-export default function CommandMenu() {
-  const [open, setOpen] = React.useState(false)
+export default function CommandMenu({ open, setOpen }) {
+  // const [open, setOpen] = React.useState(false)
+
   const [value, setValue] = React.useState("")
 
   React.useEffect(() => {
