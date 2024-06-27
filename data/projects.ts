@@ -45,6 +45,20 @@ export const projects = [
     ],
   },
   {
+    name: "User Links",
+    description:
+      "A place to put all your project links and social media profiles.",
+    image: "/links.png",
+    github: "https://github.com/ajtruex/links",
+    link: "https://links-truex.vercel.app/",
+    route: "links",
+    tools: [
+      { name: "Next.js", image: "/nextjs-logo.png" },
+      { name: "Vercel", image: "/vercel-logo.png" },
+      { name: "Tailwind CSS", image: "/tailwind-logo.png" },
+    ],
+  },
+  {
     name: "Portfolio",
     description: "My personal portfolio website built with Next.js.",
     image: "/next-portfolio.png",

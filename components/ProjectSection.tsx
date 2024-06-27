@@ -51,8 +51,8 @@ const ProjectSection = () => {
                       <Image
                         src={project.image}
                         alt=""
-                        width={1000}
-                        height={1000}
+                        width={750}
+                        height={750}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
                     </Link>
@@ -86,7 +86,7 @@ const ProjectSection = () => {
               </div>
             )
           })
-          .slice(0, 3)}
+          .slice(0, 4)}
       </div>
     </section>
   )
