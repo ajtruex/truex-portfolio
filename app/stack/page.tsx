@@ -23,51 +23,76 @@ const STACK_ITEMS = [
     name: "Raycast",
     image: "/raycast-logo.png",
     link: "https://raycast.com/",
+    stub: "raycast",
+    description: "The ultimate productivity tool for developers.",
   },
   {
     name: "Obsidian",
     image: "/obsidian-logo.svg",
     link: "https://obsidian.md/",
+    stub: "obsidian",
+    description:
+      "A powerful knowledge base that works on top of a local folder of plain text Markdown files.",
   },
   {
     name: "VS Code",
     image: "/vscode-logo.png",
     link: "https://code.visualstudio.com/",
+    stub: "vscode",
+    description:
+      "A lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.",
   },
   {
     name: "Spotify",
     image: "/spotify-logo.png",
     link: "https://www.spotify.com/",
+    stub: "spotify",
+    description:
+      "A digital music service that gives you access to millions of songs.",
   },
   {
     name: "iTerm2",
     image: "/iterm-logo.png",
     link: "https://iterm2.com/",
+    stub: "iterm2",
+    description:
+      "A terminal emulator for macOS that does amazing things with text.",
   },
   {
     name: "Maccy",
     image: "/maccy-logo.png",
     link: "https://maccy.app/",
+    stub: "maccy",
+    description: "A clipboard manager for macOS.",
   },
   {
     name: "CleanShot X",
     image: "/cleanshot-logo.png",
     link: "https://cleanshot.com/",
+    stub: "cleanshot",
+    description: "The best screenshot app for macOS.",
   },
   {
     name: "Figma",
     image: "/figma-logo.png",
     link: "https://www.figma.com/",
+    stub: "figma",
+    description: "The collaborative interface design tool.",
   },
   {
     name: "IINA",
     image: "/iina-logo.png",
     link: "https://iina.io/",
+    stub: "iina",
+    description: "The modern media player for macOS.",
   },
   {
     name: "Omnivore",
     image: "/omnivore-logo.png",
     link: "https://omnivore.app/",
+    stub: "omnivore",
+    description:
+      "The free, open source, read-it-later app for serious readers.",
   },
 ]
 
@@ -108,28 +133,52 @@ const Stack = () => {
       <div className="mt-10 grid gap-10 justify-items-center md:justify-items-start md:grid-cols-3 lg:grid-cols-4 md:gap-5 lg:gap-x-10 lg:gap-y-10">
         {STACK_ITEMS.map((item, idx) => {
           return (
-            <Link
-              href={item.link}
+            <div
               key={idx}
-              target="_blank"
-              className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
+              className="group flex cursor-pointer flex-col rounded-2xl bg-[#111111] dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
             >
-              {/* <div
-                key={idx}
-                className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-gray-500 p-5 dark:bg-[#111111] w-[200px] md:w-full"
-              > */}
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={120}
-                height={70}
-                className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
-              />
-              <div className="flex flex-col items-center space-y-2">
-                <h3 className="font-medium text-lg text-white">{item.name}</h3>
-              </div>
-              {/* </div> */}
-            </Link>
+              <HoverCard>
+                <HoverCardTrigger asChild>
+                  <Link
+                    href={item.link}
+                    key={idx}
+                    target="_blank"
+                    className="group flex cursor-pointer flex-col space-y-5 rounded-2xl bg-[#111111] p-5 dark:bg-gradient-to-r dark:from-neutral-800 dark:to-zinc-800 w-[200px] md:w-full"
+                  >
+                    <Image
+                      src={item.image}
+                      // src={`https://github.com/${item.stub}.png`}
+                      alt={item.name}
+                      width={120}
+                      height={70}
+                      className="transform self-center border-none text-black transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 "
+                    />
+                    <div className="flex flex-col items-center space-y-2">
+                      <h3 className="font-medium text-lg text-white">
+                        {item.name}
+                      </h3>
+                    </div>
+                  </Link>
+                </HoverCardTrigger>
+                <HoverCardContent className="w-80">
+                  <div className="flex justify-between space-x-4">
+                    <Avatar>
+                      <AvatarImage src={item.image} />
+                    </Avatar>
+                    <div className="space-y-1">
+                      <h4 className="text-sm font-semibold">{item.name}</h4>
+                      <p className="text-sm">{item.description}</p>
+
+                      {/* <div className="flex flex-col items-start space-y-2">
+                        <h3 className="font-medium text-lg text-white">
+                          {item.name}
+                        </h3>
+                      </div> */}
+                    </div>
+                  </div>
+                </HoverCardContent>
+              </HoverCard>
+            </div>
           )
         })}
       </div>
