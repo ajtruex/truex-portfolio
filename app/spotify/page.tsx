@@ -6,6 +6,7 @@ import TopArtists from "@/components/TopArtists"
 import TopTracks from "@/components/TopTracks"
 import Link from "next/link"
 // import Tip from "@/components/Tip"
+// import { useState } from "react"
 
 async function getData() {
   const res = await fetch(
@@ -24,6 +25,7 @@ async function getData() {
       },
     }
   )
+
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data")
@@ -71,6 +73,8 @@ async function getData() {
 
 export default async function Spotify() {
   const { data, year } = await getData()
+  // const [to, setTo] = useState("Month")
+  // const [isOpen, setIsOpen] = useState(false)
 
   console.log(data)
   return (
@@ -149,8 +153,15 @@ export default async function Spotify() {
             </div>
           </div>
         </div>
-        {/* <TopArtists /> */}
-        <TopTracks />
+        {/* <TopArtists
+          props={{
+            data: data,
+            year: year,
+          }}
+        > */}
+        <TopArtists data={data} year={year} />
+        {/* </TopArtists> */}
+        <TopTracks></TopTracks>
         {/* </div> */}
       </section>
     </div>

@@ -11,7 +11,7 @@ export type TopArtistsResponse = {
   url: string
 }
 
-export default function TopArtists() {
+export default function TopArtists(props) {
   const [to, setTo] = useState("Month")
   const [isOpen, setIsOpen] = useState(false)
   const { data } = useSWR<TopArtistsResponse[]>("/api/top-artists", fetcher)
