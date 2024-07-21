@@ -8,6 +8,7 @@ import Footer from "@/components/Footer"
 import Script from "next/script"
 import type { Metadata } from "next"
 import { CSPostHogProvider } from "./providers"
+import CommandMenu from "@/components/CMD"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://andrewtruex.com"),
@@ -144,6 +145,7 @@ export default function RootLayout({
             <CSPostHogProvider>
               <Navbar />
               {children}
+              <CommandMenu />
               <SpeedInsights />
               <Analytics />
               <Footer />
