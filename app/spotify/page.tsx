@@ -4,6 +4,7 @@
 import NowPlaying from "@/components/NowPlaying"
 import TopArtists from "@/components/TopArtists"
 import TopTracks from "@/components/TopTracks"
+
 // import Tip from "@/components/Tip"
 
 export default function Spotify() {
@@ -32,6 +33,7 @@ export default function Spotify() {
         {/* <div className="flex flex-row w-full"> */}
         <TopArtists />
         <TopTracks />
+
         {/* </div> */}
       </section>
     </div>

@@ -4,6 +4,12 @@ import useSWR from "swr"
 import Link from "next/link"
 import { useState } from "react"
 import { FiChevronDown } from "react-icons/fi"
+import { FaLastfm, FaSpotify } from "react-icons/fa"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 export type TopTracksResponse = {
   name: string
@@ -69,13 +75,53 @@ export default function TopTracks() {
           {to === "Month" ? (
             <div className="flex flex-col">
               {data?.map((track, index) => (
-                <Link
-                  href={track.url}
-                  key={index}
-                  className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
-                  target="_blank"
-                >
-                  <p className="dark:text-zinc-200 text-zinc-900 m-0 flex flex-col">
+                <Popover key={index}>
+                  <PopoverTrigger
+                    asChild
+                    className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200 truncate"
+                  >
+                    <div>
+                      <p className="dark:text-zinc-200 text-zinc-900 m-0 flex flex-col">
+                        {track.name}{" "}
+                        <span className="text-xs dark:text-zinc-400 text-zinc-700">
+                          {track.artist}
+                        </span>
+                      </p>
+                      <p className="dark:text-zinc-200 text-zinc-900 m-0">
+                        {track.playcount}{" "}
+                        <span className="text-zinc-500">plays</span>
+                      </p>
+                    </div>
+                  </PopoverTrigger>
+                  <PopoverContent
+                    className="flex flex-row justify-between space-x-4 w-auto"
+                    align="start"
+                  >
+                    <Link
+                      href={track.url}
+                      key={index}
+                      className="flex flex-col items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg hover:shadow-lg cursor-pointer duration-200"
+                      target="_blank"
+                    >
+                      Last.fm
+                      <FaLastfm className="text-red-600 text-2xl ml-2 flex flex-col" />
+                    </Link>
+                    <Link
+                      href={track.url}
+                      key={index}
+                      className="flex flex-col items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg hover:shadow-lg cursor-pointer duration-200"
+                      target="_blank"
+                    >
+                      Spotify
+                      <FaSpotify className="text-green-500 text-2xl ml-2 flex flex-col" />
+                    </Link>
+                  </PopoverContent>
+                  {/* // href={track.url}
+                    // key={index}
+                    // className="flex justify-between items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg p-2 hover:shadow-lg cursor-pointer duration-200"
+                    // target="_blank" */}
+                  {/* > */}
+                  {/* <p className="dark:text-zinc-200 text-zinc-900 m-0 flex flex-col">
                     {track.name}{" "}
                     <span className="text-xs dark:text-zinc-400 text-zinc-700">
                       {track.artist}
@@ -84,8 +130,29 @@ export default function TopTracks() {
                   <p className="dark:text-zinc-200 text-zinc-900 m-0">
                     {track.playcount}{" "}
                     <span className="text-zinc-500">plays</span>
-                  </p>
-                </Link>
+                  </p> */}
+                  {/* <PopoverContent className="flex flex-row justify-between space-x-4">
+                    <Link
+                      href={track.url}
+                      key={index}
+                      className="flex flex-col items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg hover:shadow-lg cursor-pointer duration-200"
+                      target="_blank"
+                    >
+                      Last.fm
+                      <FaLastfm className="text-red-600 text-2xl ml-2 flex flex-col" />
+                    </Link>
+                    <Link
+                      href={track.url}
+                      key={index}
+                      className="flex flex-col items-center dark:hover:bg-zinc-900/60 hover:bg-zinc-100/60 rounded-lg hover:shadow-lg cursor-pointer duration-200"
+                      target="_blank"
+                    >
+                      Spotify
+                      <FaSpotify className="text-green-500 text-2xl ml-2 flex flex-col" />
+                    </Link>
+                  </PopoverContent> */}
+                  {/* </PopoverTrigger> */}
+                </Popover>
               ))}
             </div>
           ) : (
